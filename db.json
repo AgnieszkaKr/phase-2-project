@@ -1,0 +1,268 @@
+{
+  "users":[
+        {
+            "id":"1",
+            "user_name":"JohnSilverfish",
+            "password":"1",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"2",
+            "user_name":"SandyGutenberg",
+            "password":"2",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"3",
+            "user_name":"GregSpain",
+            "password":"3",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"4",
+            "user_name":"LucyTheCat",
+            "password":"4",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"5",
+            "user_name":"Nested Object",
+            "password":"5",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"6",
+            "user_name":"PBJ",
+            "password":"6",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"7",
+            "user_name":"StacyStrong",
+            "password":"7",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"8",
+            "user_name":"RockyBalboa",
+            "password":"8",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"9",
+            "user_name":"MinnieMouse",
+            "password":"9",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"10",
+            "user_name":"MonaLisa",
+            "password":"10",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"11",
+            "user_name":"DanielaBright",
+            "password":"11",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"12",
+            "user_name":"pTag",
+            "password":"12",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"13",
+            "user_name":"Gino Rengel",
+            "password":"13",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"14",
+            "user_name":"Wilbur Denoyer",
+            "password":"14",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"15",
+            "user_name":"Micheal Brentzel",
+            "password":"",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"16",
+            "user_name":"JavaScriptLover",
+            "password":"16",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"17",
+            "user_name":"Singin Star",
+            "password":"17",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"18",
+            "user_name":"Stacy Turner",
+            "password":"18",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"20",
+            "user_name":"MollyTheTiger",
+            "password":"20",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"21",
+            "user_name":"FlyingTiger",
+            "password":"21",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"22",
+            "user_name":"Karl Metzer",
+            "password":"22",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"23",
+            "user_name":"iPhoneUser",
+            "password":"23",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"24",
+            "user_name":"FlyingBird",
+            "password":"24",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"25",
+            "user_name":"Kate Sanchez",
+            "password":"25",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"26",
+            "user_name":"Lucas Owen",
+            "password":"26",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
+            "following_categories":""
+        },
+        {
+            "id":"27",
+            "user_name":"Brad Pitt",
+            "password":"27",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"28",
+            "user_name":"Lucy Gardner",
+            "password":"28",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        },
+        {
+            "id":"29",
+            "user_name":"Brandon McDonald",
+            "password":"29",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
+            "following_categories":""
+        },
+        {
+            "id":"30",
+            "user_name":"LindaTheMet",
+            "password":"30",
+            "joined_events":"",
+            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
+            "following_categories":""
+        }
+    ],
+  "events": [
+    {
+      "id": 1,
+      "name": "Pair Programming Session JavaScript",
+      "date": "",
+      "participants": [],
+      "image":"",
+      "category":[]
+    }
+  ], 
+    "categories": [
+    {
+      "id": 1,
+      "tag": ""
+    },
+    {
+      "id": 1,
+      "tag": ""
+    },
+    {
+      "id": 1,
+      "tag": ""
+    },
+        {
+      "id": 1,
+      "tag": ""
+    },
+        {
+      "id": 1,
+      "tag": ""
+    },    
+  ]
+}
