@@ -5,7 +5,7 @@ const Event = ({event}) => {
         <div className='Event'>
             <h3>{event.name}</h3>
             <p>{event.date}</p>
-            <img class="event-img" src={event.image} alt="" />
+            <img className="event-img" src={event.image} alt="" />
             <p>description </p>
 
         </div>

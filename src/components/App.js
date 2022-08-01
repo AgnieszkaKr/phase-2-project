@@ -27,7 +27,7 @@ const App = () => {
 
   return (
     <div className="App">
-      <Header />
+      <Header users={users} handleLoginSuccess={handleLoginSuccess} />
       <Introduction />
       <Content />
     </div>
