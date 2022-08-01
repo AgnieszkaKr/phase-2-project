@@ -1,13 +1,16 @@
 import Login from './Login'
 
-const Header = () => {
+const Header = ({ users, handleLoginSuccess }) => {
     return (
         <div className='Header'>
             <div className='title-display-container'>
                 <h1>Applicaton Name</h1>
             </div>
             <div>
-                <Login />
+                <Login 
+                    users={users}
+                    handleLoginSuccess={handleLoginSuccess}
+                />
             </div>
         </div>
     )
