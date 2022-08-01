@@ -237,32 +237,263 @@
     {
       "id": 1,
       "name": "Pair Programming Session JavaScript",
-      "date": "",
+      "date": "Mon Aug 08 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"",
-      "category":[]
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[], 
+      "description":""
+      
+    },
+    {
+      "id": 2,
+      "name": "Pair Programming Session Python",
+      "date": "Mon Aug 08 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 3,
+      "name": "Interview Practice",
+      "date": "Mon Aug 08 2022 18:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 4,
+      "name": "Pair Programming Session React",
+      "date": "Mon Aug 09 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 5,
+      "name": "Pair Programming Session C++",
+      "date": "Mon Aug 09 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 6,
+      "name": "Mock Interview/Behavioral interview questions",
+      "date": "Mon Aug 09 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 7,
+      "name": "LeetCode Session",
+      "date": "Mon Aug 10 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 8,
+      "name": "JavaScript for Beginners ",
+      "date": "Mon Aug 10 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 9,
+      "name": "Pair Programming Session React",
+      "date": "Mon Aug 11 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 10,
+      "name": "Mock Interview/Behavioral interview questions",
+      "date": "Mon Aug 11 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 11,
+      "name": "JavaScript for beginners",
+      "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 12,
+      "name": "Pair programming Session- Python",
+      "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+    },
+      {
+      "id": 13,
+      "name": "JavaScript for beginners",
+      "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 14,
+      "name": "Pair Programming Session JavaScript",
+      "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[], 
+      "description":""
+      
+    },
+    {
+      "id": 15,
+      "name": "Pair Programming Session Python",
+      "date": "Mon Aug 12 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 16,
+      "name": "Interview Practice",
+      "date": "Mon Aug 12 2022 18:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 17,
+      "name": "Pair Programming Session React",
+      "date": "Mon Aug 09 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 18,
+      "name": "Pair Programming Session C++",
+      "date": "Mon Aug 09 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "category":[],
+      "description":""
+      
+    },
+    {
+      "id": 19,
+      "name": "Mock Interview/Behavioral interview questions",
+      "date": "Mon Aug 09 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 20,
+      "name": "LeetCode Session",
+      "date": "Mon Aug 10 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 21,
+      "name": "JavaScript for Beginners ",
+      "date": "Mon Aug 10 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 22,
+      "name": "Pair Programming Session React",
+      "date": "Mon Aug 11 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 23,
+      "name": "Mock Interview/Behavioral interview questions",
+      "date": "Mon Aug 11 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 24,
+      "name": "JavaScript for beginners",
+      "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
+    },
+      {
+      "id": 25,
+      "name": "Pair programming Session- Python",
+      "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+    },
+      {
+      "id": 26,
+      "name": "JavaScript for beginners",
+      "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+      "participants": [],
+      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category":[],
+      "description":""
+      
     }
   ], 
-    "categories": [
-    {
-      "id": 1,
-      "tag": ""
-    },
-    {
-      "id": 1,
-      "tag": ""
-    },
-    {
-      "id": 1,
-      "tag": ""
-    },
-        {
-      "id": 1,
-      "tag": ""
-    },
-        {
-      "id": 1,
-      "tag": ""
-    },    
-  ]
+  "category":["JavaScript", "coding", "programming", "Python", "Interview", "problem-solving skills", "programming language"]
+
+    
 }
