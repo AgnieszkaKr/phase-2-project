@@ -7,6 +7,7 @@ import Introduction from './Introduction'
 const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+  
 
   useEffect(() => {
     const getUsers = () => {
