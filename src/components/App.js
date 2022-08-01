@@ -1,4 +1,3 @@
-
 import Header from './Header'
 import Content from './Content'
 
@@ -8,7 +7,6 @@ const App = () => {
     <div className="App">
       <Header />
       <Content />
-
     </div>
   );
 }
