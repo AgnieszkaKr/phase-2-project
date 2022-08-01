@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import Header from './Header'
 import Content from './Content'
+// import Introduction from './Introduction'
 
 
 const App = () => {
@@ -27,6 +28,7 @@ const App = () => {
   return (
     <div className="App">
       <Header users={users} handleLoginSuccess={handleLoginSuccess} />
+      {/* <Introduction /> */}
       <Content />
     </div>
   );
