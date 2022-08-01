@@ -5,8 +5,6 @@ import Content from './Content'
 
 const App = () => {
 
-
-
   return (
     <div className="App">
       <Header />
