@@ -73,7 +73,7 @@ const App = () => {
         ?
           <div className='show-before-login'>
             <Introduction />
-            <Content />
+            <Content events={events} setEvents={setEvents}/>
           </div>
         : 
           <div className='show-after-login'>

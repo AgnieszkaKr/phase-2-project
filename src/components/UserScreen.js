@@ -5,9 +5,11 @@ import UpcomingEvents from './UpcomingEvents'
 const UserScreen = ({ user, joinedEvents, events }) => {
     const { user_name, following_categories } = user
     const [showMoreEvents, setShowMoreEvents] = useState(false)
+
     const handleShowMoreEvents = () => {
         // show more events for user
         setShowMoreEvents(!showMoreEvents)
+    }
 
     return (
         <div className='User-Screen'>
@@ -35,7 +37,9 @@ const UserScreen = ({ user, joinedEvents, events }) => {
             )}
         </div>
     )
-    }
 }
 
 export default UserScreen
+
+
+

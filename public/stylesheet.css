@@ -92,35 +92,44 @@
 }
 
 .show-after-login {
-    width: 100%;
-    height: 92%;
+    height: 100%;
     background-image: linear-gradient(to bottom right, blue, white);
     position: relative;
-    display: flex;
+    /* display: flex; */
     margin: 4% 4% 4% 4%;
 }
 
 .User-Screen {
-    width: 70%;
+    /* width: 70%; */
 }
 
 .Upcoming-Events {
+<<<<<<< HEAD
     width: 25%;
 <<<<<<< HEAD
+=======
+    width: 30%;
+>>>>>>> Agnes
     float: right;
+    margin:5px;
+    padding:5px;
+    background-color: rgb(235, 243, 241, 0.3);
+    /* height: 100%;
+    overflow: auto;
+    text-align:justify;
+    padding: 3% 3% 3 */
 }
 .User-Events{
-    width: 75%;
+    width: 70%;
     float: left;
+
 }
 
 .Upcoming-Event{
-    width:20%;
     height: 40%;
-    margin: 1rem;
-    box-shadow: 0 0 7px 0 #ddd;
     border-radius: 5px;
     border: 1px solid rgb(29, 27, 27);
+<<<<<<< HEAD
     width: 300px;
     padding: 10px
 =======
@@ -133,3 +142,25 @@
     padding: 0.5em;
 >>>>>>> nick-branch
 }
+=======
+}
+
+.Upcoming-Event-Image{
+    width:100%;
+    height:70%;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+.signUpForEvent{
+    padding: 10px 30px 10px 100px;
+    border-radius: 10px;
+    color: rgb(42, 39, 39);
+}
+
+.userImage{
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+}
+
+>>>>>>> Agnes
