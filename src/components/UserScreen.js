@@ -4,12 +4,20 @@ import {useState} from 'react'
 
 
 const UserScreen = ({events}) => {
-    const [showMoreEvents, setShowMoreEvents]=useState([])
+    const [showMoreEvents, setShowMoreEvents]=useState(false)
     const handleShowMoreEvents =() =>{
         // show more events for user
+        setShowMoreEvents(!showMoreEvents)
     }
     return (
         <div className='User-Screen'>
+            { showMoreEvents ? (
+            <>
+            <p>all events</p>
+            </>
+
+            ):(
+            <>
             <UserEvents />
             <div className="Upcoming-Events">
                 <h3>Upcoming events</h3>
@@ -19,8 +27,17 @@ const UserScreen = ({events}) => {
             
                 <button className="show-more-events" onClick={handleShowMoreEvents}> show more events</button>
             </div>
+            </>
+            
+            )}
+
+
+
         </div>
     )
 }
 
 export default UserScreen
+
+
+
