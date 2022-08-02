@@ -23,7 +23,6 @@
     flex-wrap: wrap;
     margin: 0 4% 0 4%;
     justify-content: center;
-
 }
 
 .Introduction{
@@ -118,14 +117,13 @@
 .User-Events{
     width: 70%;
     float: left;
-
 }
 
 .Upcoming-Event{
-    height: 40%;
+    /* height: 40%; */
     border-radius: 5px;
     border: 1px solid rgb(29, 27, 27);
-    width: 300px;
+    /* width: 300px; */
     padding: 10px
 }
 
@@ -135,7 +133,6 @@
     margin: 1em;
     padding: 0.5em;
 }
-
 
 .Upcoming-Event-Image{
     width:100%;
@@ -155,8 +152,6 @@
     border-radius: 50%;
 }
 
-
-
 .No-Events-Card {
     width: 25%;
     background-color: aliceblue;
@@ -164,3 +159,32 @@
     padding: 0.5em;
 }
 
+.Avaliable-Event{
+    display: flex;
+    width: 60%;
+    height: 80px;
+    border-style: groove;
+    border-left:hidden;
+    border-top:hidden;
+    margin: 2%;
+    font-size: small;
+    border-radius: 10px;
+}
+
+.avaliable-event-img{
+    display:block
+    border-radius: 9.5px;
+}
+
+.AvaliableEvents{
+    background-color: rgb(221, 221, 228);
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 4% 0 4%;
+    justify-content: center;
+}
+
+.Avaliable-Event-Details{
+    margin-right: 40px;
+}

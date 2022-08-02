@@ -1,11 +1,11 @@
 import {useState} from 'react'
 
-const Event = ({event}) => {
+const AvaliableEvent = ({event}) => {
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
         setShowMore(!showMore)
     }
-    let showDescription= (showMore)? "hide details":"show details"
+    
     const date = new Date(event.date)
     const day = date.getDate()
     const dayName = date.toLocaleDateString('en-US', {weekday: 'short'})
@@ -15,13 +15,14 @@ const Event = ({event}) => {
             minute: '2-digit', })
     const year = date.getFullYear()
     return (
-        <div className='Event'>
-            <img className="event-img" src={event.image} alt="" />
+        <div className="Avaliable-Event">
+            <img className="avaliable-event-img" src={event.image} alt="" onClick={handleClick}/>
+            <p className="Avaliable-Event-Details">
             <h3>{event.name}</h3>
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
-            <button className="button-description" onClick={handleClick}>{showDescription}</button>
+            </p>
         </div>
     )
 }
 
-export default Event;
+export default AvaliableEvent;

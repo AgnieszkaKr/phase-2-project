@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
+import AvaliableEvents from './AvaliableEvents'
 
 const UserScreen = ({ user, joinedEvents, events }) => {
     const { user_name, following_categories } = user
@@ -15,7 +16,7 @@ const UserScreen = ({ user, joinedEvents, events }) => {
         <div className='User-Screen'>
             {showMoreEvents ? (
                 <>
-                    <p>all events</p>
+                    <AvaliableEvents events={events}/>
                 </>
 
             ) : (
