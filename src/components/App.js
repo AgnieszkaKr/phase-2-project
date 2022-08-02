@@ -9,6 +9,7 @@ const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+  const[events, setEvents]=useState([])
   
 
   useEffect(() => {
@@ -42,11 +43,11 @@ const App = () => {
         ?
           <div className='show-before-login'>
             <Introduction />
-            <Content />
+            <Content events={events} setEvents={setEvents}/>
           </div>
         : 
           <div className='show-after-login'>
-            <UserScreen />
+            <UserScreen events={events}/>
           </div>
       }
     </div>

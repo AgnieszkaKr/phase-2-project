@@ -1,8 +1,8 @@
 import {useEffect, useState} from 'react'
 import Event from './Event'
 
-const Content = () => {
-    const[events, setEvents]=useState([])
+const Content = ({events, setEvents}) => {
+    
     useEffect(()=>{
         fetch('http://localhost:8000/events')
         .then(req => req.json())

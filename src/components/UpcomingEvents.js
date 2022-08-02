@@ -12,7 +12,7 @@ const UpcomingEvents = ({event}) => {
     return (
         <div className='Upcoming-Event'>
             <p>{event.name}</p>
-            <p>{`${dayName},${day} ${month},${year}`}</p>
+            <p>{`${dayName},${day} ${month},${year} ${hour}`}</p>
         </div>
     )
 }
