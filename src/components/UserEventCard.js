@@ -1,7 +1,7 @@
-const UserEventCard = ({ event }) => {
+const UserEventCard = ({ image }) => {
     return (
         <div className='User-Event-Card'>
-            <h1>TEST</h1>
+            <img src={image} />
         </div>
     )
 }

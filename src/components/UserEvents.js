@@ -13,6 +13,7 @@ const UserEvents = ({ userName, joinedEvents, followingCategories }) => {
                         return (
                             <UserEventCard
                                 key={id}
+                                image={image}
                             />
                         )
                     })
