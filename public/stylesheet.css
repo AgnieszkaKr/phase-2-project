@@ -104,12 +104,8 @@
 }
 
 .Upcoming-Events {
-<<<<<<< HEAD
     width: 25%;
-<<<<<<< HEAD
-=======
     width: 30%;
->>>>>>> Agnes
     float: right;
     margin:5px;
     padding:5px;
@@ -129,10 +125,8 @@
     height: 40%;
     border-radius: 5px;
     border: 1px solid rgb(29, 27, 27);
-<<<<<<< HEAD
     width: 300px;
     padding: 10px
-=======
 }
 
 .No-Events-Card {
@@ -140,10 +134,8 @@
     background-color: aliceblue;
     margin: 1em;
     padding: 0.5em;
->>>>>>> nick-branch
 }
-=======
-}
+
 
 .Upcoming-Event-Image{
     width:100%;
@@ -162,5 +154,3 @@
     height: 75px;
     border-radius: 50%;
 }
-
->>>>>>> Agnes

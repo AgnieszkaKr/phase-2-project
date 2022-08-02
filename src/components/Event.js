@@ -7,10 +7,6 @@ const Event = ({event}) => {
     }
     let showDescription= (showMore)? "hide details":"show details"
     let date = new Date(event.date)
-<<<<<<< HEAD
-    // console.log(date)
-=======
->>>>>>> Agnes
     return (
         <div className='Event'>
             <img className="event-img" src={event.image} alt="" />
