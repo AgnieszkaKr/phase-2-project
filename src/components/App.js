@@ -83,6 +83,7 @@ const App = () => {
             <UserScreen
               user={currentUser} 
               joinedEvents={userEvents}
+              events={events}
             />
           </div>
       }

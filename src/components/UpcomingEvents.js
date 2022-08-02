@@ -24,17 +24,17 @@ const UpcomingEvents = ({event}) => {
         <div className='Upcoming-Event' onClick={handeleDisplayEvent} >
             
             {displayDetails ? (
-            <p>
+            <div>
             <p>{event.name}</p>
             <img className="Upcoming-Event-Image" src={event.image} alt="" />
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
             <p>{event.description}</p>
             <button className="signUpForEvent" onClick={handleSigningUp}>Sign up </button>
-            </p>
+            </div>
              ):(
-            <p>
+            <div>
             <p>{event.name}</p>
-            <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></p> )}
+            <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></div> )}
             
         </div>
     )
