@@ -9,9 +9,6 @@ const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-<<<<<<< HEAD
-  
-=======
   const [userEvents, setUserEvents] = useState([])
   const [events, setEvents] = useState([])
   
@@ -24,7 +21,6 @@ const App = () => {
     getEvents()
   }, [])
 
->>>>>>> nick-branch
 
   useEffect(() => {
     const getUsers = () => {
