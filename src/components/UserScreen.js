@@ -15,7 +15,6 @@ const UserScreen = ({events}) => {
             <>
             <p>all events</p>
             </>
-
             ):(
             <>
             <UserEvents />
