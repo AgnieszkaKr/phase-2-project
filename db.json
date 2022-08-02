@@ -251,7 +251,8 @@
       "participants": [],
       "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -261,8 +262,8 @@
       "participants": [],
       "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
       "category":[],
-      "description":""
-      
+      "description":"",
+      "owner":"Admin"
     },
     {
       "id": 4,
@@ -271,8 +272,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
-      
+      "description":"",
+      "owner":"Admin" 
     },
     {
       "id": 5,
@@ -281,8 +282,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
       "category":[],
-      "description":""
-      
+      "description":"",
+      "owner":"Admin"
     },
     {
       "id": 6,
@@ -291,8 +292,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
       "category":[],
-      "description":""
-      
+      "description":"",
+      "owner":"Admin"
     },
       {
       "id": 7,
@@ -301,7 +302,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -311,8 +313,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
-      
+      "description":"",
+      "owner":"Admin"
     },
       {
       "id": 9,
@@ -321,7 +323,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -331,7 +334,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -341,7 +345,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -351,7 +356,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
     },
       {
       "id": 13,
@@ -360,7 +366,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -370,7 +377,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[], 
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -380,7 +388,8 @@
       "participants": [],
       "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -390,7 +399,8 @@
       "participants": [],
       "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -400,7 +410,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -410,7 +421,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
     {
@@ -420,7 +432,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -430,7 +443,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -440,7 +454,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -450,7 +465,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -460,7 +476,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -470,7 +487,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     },
       {
@@ -480,7 +498,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
     },
       {
       "id": 26,
@@ -489,7 +508,8 @@
       "participants": [],
       "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
       "category":[],
-      "description":""
+      "description":"",
+      "owner":"Admin"
       
     }
   ], 

@@ -13,6 +13,7 @@
     align-items: center;
     justify-content: space-between;
     height: 80px;
+    margin: 4% 4% 0 4%;
 }
 
 .Content{
@@ -20,7 +21,7 @@
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    margin: 20px;
+    margin: 0 4% 0 4%;
     justify-content: center;
 
 }
@@ -29,7 +30,7 @@
     background-color: grey;
     display: flex;
     background-image: linear-gradient(to right, rgb(241, 232, 232) , rgb(255, 255, 255));
-    margin: 20px;
+    margin: 4%;
     height: 300px;
     
 }
@@ -72,7 +73,8 @@
 }
 
 .title-display-container {
-    width: 60%
+    width: 60%;
+    margin: 4% 4% 0 4%;
 }
 
 .Menu {
@@ -95,6 +97,7 @@
     background-image: linear-gradient(to bottom right, blue, white);
     position: relative;
     display: flex;
+    margin: 4% 4% 4% 4%;
 }
 
 .User-Screen {
@@ -103,4 +106,20 @@
 
 .Upcoming-Events {
     width: 25%;
+    float: right;
+}
+.User-Events{
+    width: 75%;
+    float: left;
+}
+
+.Upcoming-Event{
+    width:20%;
+    height: 40%;
+    margin: 1rem;
+    box-shadow: 0 0 7px 0 #ddd;
+    border-radius: 5px;
+    border: 1px solid rgb(29, 27, 27);
+    width: 300px;
+    padding: 10px
 }
