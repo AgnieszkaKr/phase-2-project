@@ -104,3 +104,10 @@
 .Upcoming-Events {
     width: 25%;
 }
+
+.No-Events-Card {
+    width: 25%;
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 0.5em;
+}
