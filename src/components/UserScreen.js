@@ -1,6 +1,9 @@
 import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
+
 import {useState} from 'react'
+
+
 
 
 const UserScreen = ({events}) => {
@@ -29,8 +32,6 @@ const UserScreen = ({events}) => {
             </>
             
             )}
-
-
 
         </div>
     )
