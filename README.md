@@ -5,6 +5,7 @@ json-server --watch db.json --port 8000
 ```
 
 `http://localhost:8000/users`
+`http://localhost:8000/events`
 
 # Getting Started with Create React App
 

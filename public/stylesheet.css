@@ -106,6 +106,7 @@
 
 .Upcoming-Events {
     width: 25%;
+<<<<<<< HEAD
     float: right;
 }
 .User-Events{
@@ -122,4 +123,13 @@
     border: 1px solid rgb(29, 27, 27);
     width: 300px;
     padding: 10px
+=======
+}
+
+.No-Events-Card {
+    width: 25%;
+    background-color: aliceblue;
+    margin: 1em;
+    padding: 0.5em;
+>>>>>>> nick-branch
 }

@@ -9,7 +9,22 @@ const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+<<<<<<< HEAD
   
+=======
+  const [userEvents, setUserEvents] = useState([])
+  const [events, setEvents] = useState([])
+  
+  useEffect(() => {
+    const getEvents = () => {
+      fetch('http://localhost:8000/events')
+      .then(req => req.json())
+      .then(res => setEvents(res))
+    }
+    getEvents()
+  }, [])
+
+>>>>>>> nick-branch
 
   useEffect(() => {
     const getUsers = () => {
@@ -23,14 +38,34 @@ const App = () => {
     getUsers()
   }, [])
 
+  useEffect(() => {
+    const associateUserEvents = () => {
+      const _userEvents = events.filter((event) => {
+        return (
+          currentUser['joined_events'].includes(event.id)
+        )
+      })
+      setUserEvents(_userEvents)
+    }
+    associateUserEvents()
+  }, [currentUser])
+  
+
   const handleLoginSuccess = (user) => {
-    setCurrentUser(user)
-    // console.log('Hello, ', user.user_name)
+    handleCurrentUser(user)
     setIsLoggedIn(true)
   }
 
+  const handleCurrentUser = (user) => {
+    setCurrentUser(user)
+  }
+
+  
   return (
     <div className="App">
+      <button onClick={() => {
+        console.log(userEvents)
+      }}>Click</button>
       <Header 
         users={users} 
         currentUser={currentUser}
@@ -46,7 +81,10 @@ const App = () => {
           </div>
         : 
           <div className='show-after-login'>
-            <UserScreen />
+            <UserScreen
+              user={currentUser} 
+              joinedEvents={userEvents}
+            />
           </div>
       }
     </div>

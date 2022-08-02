@@ -1,4 +1,5 @@
 import {useState} from 'react'
+
 const Event = ({event}) => {
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
@@ -6,7 +7,7 @@ const Event = ({event}) => {
     }
     let showDescription= (showMore)? "hide details":"show details"
     let date = new Date(event.date)
-    console.log(date)
+    // console.log(date)
     return (
         <div className='Event'>
             <img className="event-img" src={event.image} alt="" />
