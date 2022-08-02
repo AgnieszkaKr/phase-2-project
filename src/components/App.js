@@ -8,7 +8,11 @@ import UserScreen from './UserScreen'
 const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+<<<<<<< HEAD
   const [isLoggedIn, setIsLoggedIn] = useState(false)
+=======
+  
+>>>>>>> 96f03198c535f4b52b09e40b4f5ed26aaf920867
 
   useEffect(() => {
     const getUsers = () => {
