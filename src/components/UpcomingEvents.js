@@ -15,6 +15,10 @@ const UpcomingEvents = ({event}) => {
     const handeleDisplayEvent =()=>{
         setDisplayDitails(!displayDetails)
     }
+    const handleSigningUp =()=>{
+        // EVENT USER SIGNED UP-UPDATE EVENTS
+        console.log(event.id)
+    }
     
     return (
         <div className='Upcoming-Event' onClick={handeleDisplayEvent} >
@@ -25,13 +29,16 @@ const UpcomingEvents = ({event}) => {
             <img className="Upcoming-Event-Image" src={event.image} alt="" />
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
             <p>{event.description}</p>
+            <button className="signUpForEvent" onClick={handleSigningUp}>Sign up </button>
             </p>
              ):(
             <p>
             <p>{event.name}</p>
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></p> )}
+            
         </div>
     )
 }
 
 export default UpcomingEvents
+
