@@ -2,18 +2,20 @@ import { useState, useEffect } from 'react'
 import Header from './Header'
 import Content from './Content'
 import Introduction from './Introduction'
+import UserScreen from './UserScreen'
 
 
 const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
+  const [isLoggedIn, setIsLoggedIn] = useState(false)
 
   useEffect(() => {
     const getUsers = () => {
       fetch('http://localhost:8000/users')
       .then(req => req.json())
       .then(res => {
-        console.log(res)
+        // console.log(res)
         setUsers(res)
       })
     }
@@ -22,14 +24,30 @@ const App = () => {
 
   const handleLoginSuccess = (user) => {
     setCurrentUser(user)
-    console.log('Hello, ', user.user_name)
+    // console.log('Hello, ', user.user_name)
+    setIsLoggedIn(true)
   }
 
   return (
     <div className="App">
-      <Header users={users} handleLoginSuccess={handleLoginSuccess} />
-      <Introduction />
-      <Content />
+      <Header 
+        users={users} 
+        currentUser={currentUser}
+        handleLoginSuccess={handleLoginSuccess} 
+        isLoggedIn={isLoggedIn}
+      />
+      {
+        !isLoggedIn
+        ?
+          <div className='show-before-login'>
+            <Introduction />
+            <Content />
+          </div>
+        : 
+          <div className='show-after-login'>
+            <UserScreen />
+          </div>
+      }
     </div>
   );
 }
