@@ -1,519 +1,552 @@
 {
-  "users":[
-        {
-            "id":"1",
-            "user_name":"JohnSilverfish",
-            "password":"1",
-            "joined_events":[1, 2, 5, 7, 11],
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"2",
-            "user_name":"SandyGutenberg",
-            "password":"2",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"3",
-            "user_name":"GregSpain",
-            "password":"3",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"4",
-            "user_name":"LucyTheCat",
-            "password":"4",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"5",
-            "user_name":"Nested Object",
-            "password":"5",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"6",
-            "user_name":"PBJ",
-            "password":"6",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"7",
-            "user_name":"StacyStrong",
-            "password":"7",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"8",
-            "user_name":"RockyBalboa",
-            "password":"8",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"9",
-            "user_name":"MinnieMouse",
-            "password":"9",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"10",
-            "user_name":"MonaLisa",
-            "password":"10",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"11",
-            "user_name":"DanielaBright",
-            "password":"11",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"12",
-            "user_name":"pTag",
-            "password":"12",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"13",
-            "user_name":"Gino Rengel",
-            "password":"13",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"14",
-            "user_name":"Wilbur Denoyer",
-            "password":"14",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"15",
-            "user_name":"Micheal Brentzel",
-            "password":"",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"16",
-            "user_name":"JavaScriptLover",
-            "password":"16",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"17",
-            "user_name":"Singin Star",
-            "password":"17",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"18",
-            "user_name":"Stacy Turner",
-            "password":"18",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"20",
-            "user_name":"MollyTheTiger",
-            "password":"20",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"21",
-            "user_name":"FlyingTiger",
-            "password":"21",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"22",
-            "user_name":"Karl Metzer",
-            "password":"22",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"23",
-            "user_name":"iPhoneUser",
-            "password":"23",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"24",
-            "user_name":"FlyingBird",
-            "password":"24",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"25",
-            "user_name":"Kate Sanchez",
-            "password":"25",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"26",
-            "user_name":"Lucas Owen",
-            "password":"26",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=male",
-            "following_categories":""
-        },
-        {
-            "id":"27",
-            "user_name":"Brad Pitt",
-            "password":"27",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"28",
-            "user_name":"Lucy Gardner",
-            "password":"28",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        },
-        {
-            "id":"29",
-            "user_name":"Brandon McDonald",
-            "password":"29",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=pixel",
-            "following_categories":""
-        },
-        {
-            "id":"30",
-            "user_name":"LindaTheMet",
-            "password":"30",
-            "joined_events":"",
-            "image":"https://xsgames.co/randomusers/avatar.php?g=female",
-            "following_categories":""
-        }
-    ],
+  "users": [
+    {
+      "id": "1",
+      "user_name": "JohnSilverfish",
+      "password": "1",
+      "joined_events": [
+        1,
+        2,
+        5,
+        7,
+        11
+      ],
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "2",
+      "user_name": "SandyGutenberg",
+      "password": "2",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "3",
+      "user_name": "GregSpain",
+      "password": "3",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "4",
+      "user_name": "LucyTheCat",
+      "password": "4",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "5",
+      "user_name": "Nested Object",
+      "password": "5",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "6",
+      "user_name": "PBJ",
+      "password": "6",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "7",
+      "user_name": "StacyStrong",
+      "password": "7",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "8",
+      "user_name": "RockyBalboa",
+      "password": "8",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "9",
+      "user_name": "MinnieMouse",
+      "password": "9",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "10",
+      "user_name": "MonaLisa",
+      "password": "10",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "11",
+      "user_name": "DanielaBright",
+      "password": "11",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "12",
+      "user_name": "pTag",
+      "password": "12",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "13",
+      "user_name": "Gino Rengel",
+      "password": "13",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "14",
+      "user_name": "Wilbur Denoyer",
+      "password": "14",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "15",
+      "user_name": "Micheal Brentzel",
+      "password": "",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "16",
+      "user_name": "JavaScriptLover",
+      "password": "16",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "17",
+      "user_name": "Singin Star",
+      "password": "17",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "18",
+      "user_name": "Stacy Turner",
+      "password": "18",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "20",
+      "user_name": "MollyTheTiger",
+      "password": "20",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "21",
+      "user_name": "FlyingTiger",
+      "password": "21",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "22",
+      "user_name": "Karl Metzer",
+      "password": "22",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "23",
+      "user_name": "iPhoneUser",
+      "password": "23",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "24",
+      "user_name": "FlyingBird",
+      "password": "24",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "25",
+      "user_name": "Kate Sanchez",
+      "password": "25",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "26",
+      "user_name": "Lucas Owen",
+      "password": "26",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=male",
+      "following_categories": ""
+    },
+    {
+      "id": "27",
+      "user_name": "Brad Pitt",
+      "password": "27",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "28",
+      "user_name": "Lucy Gardner",
+      "password": "28",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    },
+    {
+      "id": "29",
+      "user_name": "Brandon McDonald",
+      "password": "29",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=pixel",
+      "following_categories": ""
+    },
+    {
+      "id": "30",
+      "user_name": "LindaTheMet",
+      "password": "30",
+      "joined_events": "",
+      "image": "https://xsgames.co/randomusers/avatar.php?g=female",
+      "following_categories": ""
+    }
+  ],
   "events": [
     {
       "id": 1,
       "name": "Pair Programming Session JavaScript",
       "date": "Mon Aug 08 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[], 
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories."
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories."
     },
     {
       "id": 2,
       "name": "Pair Programming Session Python",
       "date": "Mon Aug 08 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 3,
       "name": "Interview Practice",
       "date": "Mon Aug 08 2022 18:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
+      "image": "https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
     {
       "id": 4,
       "name": "Pair Programming Session React",
       "date": "Mon Aug 09 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin" 
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 5,
       "name": "Pair Programming Session C++",
       "date": "Mon Aug 09 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 6,
       "name": "Mock Interview/Behavioral interview questions",
       "date": "Mon Aug 09 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
+      "image": "https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 7,
       "name": "LeetCode Session",
       "date": "Mon Aug 10 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 8,
       "name": "JavaScript for Beginners ",
       "date": "Mon Aug 10 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 9,
       "name": "Pair Programming Session React",
       "date": "Mon Aug 11 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 10,
       "name": "Mock Interview/Behavioral interview questions",
       "date": "Mon Aug 11 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 11,
       "name": "JavaScript for beginners",
       "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 12,
       "name": "Pair programming Session- Python",
       "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 13,
       "name": "JavaScript for beginners",
       "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
     {
       "id": 14,
       "name": "Pair Programming Session JavaScript",
       "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[], 
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 15,
       "name": "Pair Programming Session Python",
       "date": "Mon Aug 12 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 16,
       "name": "Interview Practice",
       "date": "Mon Aug 12 2022 18:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
     {
       "id": 17,
       "name": "Pair Programming Session React",
       "date": "Mon Aug 09 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 18,
       "name": "Pair Programming Session C++",
       "date": "Mon Aug 09 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
     {
       "id": 19,
       "name": "Mock Interview/Behavioral interview questions",
       "date": "Mon Aug 09 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 20,
       "name": "LeetCode Session",
       "date": "Mon Aug 10 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 21,
       "name": "JavaScript for Beginners ",
       "date": "Mon Aug 10 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 22,
       "name": "Pair Programming Session React",
       "date": "Mon Aug 11 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 23,
       "name": "Mock Interview/Behavioral interview questions",
       "date": "Mon Aug 11 2022 21:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 24,
       "name": "JavaScript for beginners",
       "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 25,
       "name": "Pair programming Session- Python",
       "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
-      "owner":"Admin"
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+      "owner": "Admin"
     },
-      {
+    {
       "id": 26,
       "name": "JavaScript for beginners",
       "date": "Mon Aug 11 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
       "participants": [],
-      "image":"https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
-      "category":[],
-      "description":"",
-      "owner":"Admin"
-      
+      "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+      "category": [],
+      "description": "",
+      "owner": "Admin"
+    },
+    {
+      "name": "hweh",
+      "date": "2022-08-17T04:00:00.000Z",
+      "participants": [],
+      "image": "twhthtr",
+      "category": [],
+      "description": "hwtrhwth",
+      "owner": "JohnSilverfish",
+      "id": 27
+    },
+    {
+      "name": "wgeqrbrg",
+      "date": "2022-08-16T04:00:00.000Z",
+      "participants": [],
+      "image": "sadgsdgasdg",
+      "category": [],
+      "description": "sdgasdg",
+      "owner": "JohnSilverfish",
+      "id": 28
+    },
+    {
+      "name": "sDgSDGASDGSG",
+      "date": "2022-08-18T04:00:00.000Z",
+      "participants": [],
+      "image": "DSGASDGASDG",
+      "category": [],
+      "description": "ADGASDA",
+      "owner": "JohnSilverfish",
+      "id": 29
+    },
+    {
+      "name": "SDGAWDGFH",
+      "date": "2022-08-25T04:00:00.000Z",
+      "participants": [],
+      "image": "FAHSDGDAG",
+      "category": [],
+      "description": "HSDFHSDFH",
+      "owner": "JohnSilverfish",
+      "id": 30
     }
-  ], 
-  "category":["JavaScript", "coding", "programming", "Python", "Interview", "problem-solving skills", "programming language"]
-
-    
+  ],
+  "category": [
+    "JavaScript",
+    "coding",
+    "programming",
+    "Python",
+    "Interview",
+    "problem-solving skills",
+    "programming language"
+  ]
 }

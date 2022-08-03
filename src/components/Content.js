@@ -9,11 +9,15 @@ const Content = ({events, setEvents}) => {
         .then(res => setEvents(res))
     }, [])
 
+    let displayEightEvents = events.filter((event, index) => index < 8)
+
     return (
         <div className='Content'>
-            {events.map(event => {return <Event key={event.id} event={event}/>})}
+            { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
+            }
+            <p>SHOW MORE (should redirect to login interface)</p>
         </div>
-    )
+        )
 }
 
 export default Content

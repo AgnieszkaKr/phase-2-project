@@ -17,7 +17,7 @@ const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn }) => {
                         handleLoginSuccess={handleLoginSuccess} 
                         />
                     </div>
-                    : <div className='Menu'>
+                    : <div className='User-Menu'>
                         <Menu 
                         currentUser={currentUser} 
                         />
