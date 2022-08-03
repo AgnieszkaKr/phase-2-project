@@ -20,7 +20,7 @@ const UserScreen = ({ user, joinedEvents, events }) => {
             </div>
             {showMoreEvents ? (
                 <>
-                    <AvaliableEvents events={events}/>
+                    <AvaliableEvents events={events} userName={user_name}/>
                 </>
 
             ) : (

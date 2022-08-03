@@ -4,7 +4,7 @@ import Calendar from 'react-calendar'
 import CreateEvent from './CreateEvent'
 import 'react-calendar/dist/Calendar.css';
 
-const AvaliableEvents = ({events}) => {
+const AvaliableEvents = ({events, userName}) => {
 
     const[searchKey, setSearchKey]=useState('')
     // display four events
@@ -92,7 +92,7 @@ const AvaliableEvents = ({events}) => {
     return (
         <div>
 
-        {createEvent ? (<CreateEvent />):(
+        {createEvent ? (<CreateEvent userName={userName}/>):(
         <div>
         <div>
             <h3>SIGN UP FOR UPCOMING EVENTS</h3>
