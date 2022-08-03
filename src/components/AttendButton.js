@@ -5,27 +5,23 @@ import { useState, useEffect } from 'react'
 // we know whether the user is attending an event or not if their
 // attending events array includes the id of an event
 
-const AttendButton = ({ id, events, joinedEvents }) => {
+const AttendButton = ({ isJoined  }) => {
 
     // determine initial state in parent component and update state in children
-
-    const [isJoined, setIsJoined] = useState(false)
-
     
-    useEffect(() => {
-        const filterEvents = () => {
-            console.log(id)
-            joinedEvents.filter((event) => {
-                console.log('id is', id, 'event.id is', event.id)
-                return (
-                    event.id == id
-                    ? setIsJoined(true)
-                    : setIsJoined(false)
-                )
-            })
+    return (
+        <div className='Attend-Button'>
+            {isJoined
+            ? <button onClick={((e) => {
+                console.log(isJoined)
+            })}>Leave</button>
+            : <button>Join</button>
         }
-        filterEvents()
-    }, [joinedEvents])
+        </div>
+    )
+}
+
+export default AttendButton
 
     // const filterEvents = () => {
     //     console.log(id)
@@ -46,19 +42,3 @@ const AttendButton = ({ id, events, joinedEvents }) => {
     // const activeServiceList = serviceList.filter((item) => {
     //     return activeIds.includes(item.id);
     // });
-    
-    const [isAttending, setIsAttending] = useState()
-
-    return (
-        <div className='Attend-Button'>
-            {isJoined
-            ? <button onClick={((e) => {
-                console.log(isJoined)
-            })}>Leave</button>
-            : <button>Join</button>
-            }
-        </div>
-    )
-}
-
-export default AttendButton
