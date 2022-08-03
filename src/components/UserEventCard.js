@@ -1,19 +1,33 @@
 import { useState, useEffect } from 'react'
 import AttendButton from './AttendButton.js'
 
-const UserEventCard = ({ id, name, date, participants, image, events, joinedEvents, handleJoinEvent, handleLeaveEvent, userEventIds }) => {
+const UserEventCard = ({ userId, handleCurrentUser, id, name, date, participants, image, events, joinedEvents, handleJoinEvent, handleLeaveEvent, userEventsIds }) => {
     const [isJoined, setIsJoined] = useState(false)
 
     useEffect(() => {
         const filterEvents = () => {
-            joinedEvents.filter((_id) => {
-                if (_id.id == id) {
+            userEventsIds.filter((_id) => {
+                if (_id == id) {
                     setIsJoined(true)
                 }
             })
         }
         filterEvents()
     }, [joinedEvents])
+    
+    const handleUpdateUserEvents = () => {
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({joined_events: userEventsIds})
+        })
+        .then(req => req.json())
+        .then(res => {
+            handleCurrentUser(res)
+        })   
+    }
 
     const handleJoinLeave = () => {
         if (isJoined) {
@@ -38,6 +52,7 @@ const UserEventCard = ({ id, name, date, participants, image, events, joinedEven
                 joinedEvents={joinedEvents}
                 isJoined={isJoined}
                 handleJoinLeave={handleJoinLeave}
+                handleUpdateUserEvents={handleUpdateUserEvents}
             />
         </div>
     )

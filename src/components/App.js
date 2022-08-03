@@ -41,43 +41,32 @@ const App = () => {
       const _userEvents = events.filter((event) => {
         return (
           currentUser['joined_events'].includes(event.id)
-        )
-      })
-      setUserEvents(_userEvents)
+          )
+        })
+        setUserEvents(_userEvents)
+        setUserEventsIds(currentUser.joined_events)
     }
     associateUserEvents()
   }, [currentUser])
   
-  // useEffect(() => {
-  //   const fillUserEvents = () => {
-  //     console.log('death' , currentUser.joined_events)
-  //     setUserEventsIds(currentUser.joined_events)
-  //     console.log(userEventsIds)
-  //   }
-  //   fillUserEvents()
-  // }, [currentUser, userEvents])
 
   const handleLoginSuccess = (user) => {
     handleCurrentUser(user)
     setIsLoggedIn(true)
   }
-  
 
   const handleCurrentUser = (user) => {
     setCurrentUser(user)
-    setUserEventsIds(user.joined_events)
   }
 
     const handleJoinEvent = (newEventId) => {
       const newUserEventsIds = [...userEventsIds, newEventId]
       setUserEventsIds(newUserEventsIds)
-      console.log(userEventsIds)
     }
 
     const handleLeaveEvent = (eventToLeaveId) => {
       const newUserEventsIds = userEventsIds.filter((target) => target != eventToLeaveId)
       setUserEventsIds(newUserEventsIds)
-      console.log(userEventsIds)
     }
 
   return (
@@ -99,6 +88,7 @@ const App = () => {
           <div className='show-after-login'>
             <UserScreen
               user={currentUser} 
+              handleCurrentUser={handleCurrentUser}
               joinedEvents={userEvents}
               events={events}
               handleJoinEvent={handleJoinEvent}

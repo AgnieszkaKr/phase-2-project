@@ -2,7 +2,7 @@ import UserEventCard from './UserEventCard'
 import NoEventsCard from './NoEventsCard'
 
 
-const UserEvents = ({ userName, joinedEvents, followingCategories, events, handleJoinEvent, handleLeaveEvent, userEventIds }) => {
+const UserEvents = ({ userName, userId, handleCurrentUser, joinedEvents, followingCategories, events, handleJoinEvent, handleLeaveEvent, userEventsIds }) => {
     return (
         <div className='User-Events'>
             <h2>Your Upcoming Events</h2>
@@ -13,6 +13,8 @@ const UserEvents = ({ userName, joinedEvents, followingCategories, events, handl
                         return (
                             <UserEventCard
                                 key={id}
+                                userId={userId}
+                                handleCurrentUser={handleCurrentUser}
                                 id={id}
                                 name={name}
                                 date={date}
@@ -22,7 +24,7 @@ const UserEvents = ({ userName, joinedEvents, followingCategories, events, handl
                                 handleJoinEvent={handleJoinEvent}
                                 handleLeaveEvent={handleLeaveEvent}
                                 joinedEvents={joinedEvents}
-                                userEventIds={userEventIds}
+                                userEventsIds={userEventsIds}
                             />
                         )
                     })
