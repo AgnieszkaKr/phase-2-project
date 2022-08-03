@@ -5,7 +5,6 @@ import NoEventsCard from './NoEventsCard'
 const UserEvents = ({ userName, joinedEvents, followingCategories, events }) => {
     return (
         <div className='User-Events'>
-            <h2>Your Upcoming Events</h2>
             <div className='User-Upcoming-Events'>
                 {joinedEvents 
                     ? joinedEvents.map((event) => {

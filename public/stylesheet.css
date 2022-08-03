@@ -38,7 +38,6 @@
     padding-left:5px;
     margin: 4px;
     width: 120px;
-    display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
@@ -62,9 +61,7 @@
     height: 400px;
     width: 90%;
     margin-left: 4%;
-    
-    
-    
+    align-items: center;
 }
 #web-description{
     font-size: 20px;
@@ -113,7 +110,8 @@
     display: flex;
     align-items: center;
     justify-content: right;
-    margin: 4% 4% 0 4%
+    margin: 1% 4% 0 4%;
+    border-bottom: solid gray
 }
 
 .Menu div {
@@ -149,6 +147,24 @@
 .User-Events{
     width: 66%;
     float: left;
+}
+
+#Logo-User-Screen{
+    height:300px;
+    float:right
+}
+#Description-UserScreen{
+    
+    text-align: center;
+    height:30%
+}
+.introduction-user-screen{
+    margin: 5%;
+    display:flex;
+    justify-content: centerEvent;
+    border-bottom: solid grey;
+    align-items: center;
+    
 }
 
 .Upcoming-Event{
@@ -265,7 +281,6 @@
 .Events-Group{
     width:100%px;
     height:190px;
-    margin-top: 10%;
     margin-bottom: 10%
     
 }

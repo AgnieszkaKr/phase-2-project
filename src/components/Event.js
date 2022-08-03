@@ -5,7 +5,7 @@ const Event = ({event}) => {
     const handleClick =()=>{
         setShowMore(!showMore)
     }
-    let showDescription= (showMore)? "hide details":"show details"
+    let showDescription= (showMore) ? "hide details":"show details"
     const date = new Date(event.date)
     const day = date.getDate()
     const dayName = date.toLocaleDateString('en-US', {weekday: 'short'})
@@ -19,7 +19,10 @@ const Event = ({event}) => {
             <img className="event-img" src={event.image} alt="" />
             <h3>{event.name}</h3>
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
+            {showMore ? <div>{event.description}</div>:<></>}
             <button className="button-description" onClick={handleClick}>{showDescription}</button>
+
+            
         </div>
     )
 }

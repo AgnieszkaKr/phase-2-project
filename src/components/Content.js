@@ -15,7 +15,7 @@ const Content = ({events, setEvents}) => {
         <div className='Content'>
             { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
             }
-            <p>SHOW MORE</p>
+            <p>SHOW MORE (should redirect to login interface)</p>
         </div>
         )
 }
