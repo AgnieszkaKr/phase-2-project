@@ -7,7 +7,6 @@
 }
 
 .Header {
-<<<<<<< HEAD
     height: 60px;
 }
 .title-display-container {
@@ -38,17 +37,13 @@
     height: 25px;
     padding-left:5px;
     margin: 4px;
-    width: 120px
-
-
-=======
+    width: 120px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
     height: 80px;
     /* margin: 4% 4% 0 4%; */
->>>>>>> nick-branch
 }
 
 .Content{
@@ -189,7 +184,6 @@
     border-radius: 50%;
 }
 
-<<<<<<< HEAD
 .No-Events-Card {
     width: 25%;
     background-color: aliceblue;
@@ -239,7 +233,6 @@
 }
 
 
-=======
 .User-Upcoming-Events {
     display: flex;
     flex-wrap: wrap;
@@ -264,4 +257,3 @@
 .Login {
     margin: 4% 4% 0 4%
 }
->>>>>>> nick-branch
