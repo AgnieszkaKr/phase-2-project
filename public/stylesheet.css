@@ -1,6 +1,5 @@
 * {
     box-sizing: border-box;
-    font-family: sans-serif;
 }
 .App {
     width: 100%;
@@ -8,16 +7,45 @@
 }
 
 .Header {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 80px;
-    margin: 4% 4% 0 4%;
+    height: 60px;
+}
+.title-display-container {
+    float: left;
+    margin-top:1%;
+    margin-left: 4%
+}
+.login-container{
+    margin-top:3%;
+    float: right;
+    
+}
+.Log-In{
+    padding:5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #e3edf1;
+    border:none;
+    
+}
+
+.input-form{
+    border-radius:10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    border: none;
+    height: 25px;
+    padding-left:5px;
+    margin: 4px;
+    width: 120px
+
+
 }
 
 .Content{
-    background-color: rgb(221, 221, 228);
+    border-top:3px;
+    border-top: solid;
+    border-top-color: rgb(170, 170, 170);
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -26,11 +54,12 @@
 }
 
 .Introduction{
-    background-color: grey;
     display: flex;
-    background-image: linear-gradient(to right, rgb(241, 232, 232) , rgb(255, 255, 255));
-    margin: 4%;
-    height: 300px;
+    height: 400px;
+    width: 90%;
+    margin-left: 4%;
+    
+    
     
 }
 #web-description{
@@ -38,23 +67,25 @@
     text-align: justify;
     justify-content: center;
     padding: 30px;
+    float: left;
+    letter-spacing: 0.1em;
+    margin-top: 7%;
+    font-size:10px
 }
 #logo{
-    
-    height: 70%;
-    opacity: 0.8;
-    padding: 60px
-    
+    float: right;
+    height: 300px;
+    margin-top:5%   
 }
 
 .Event{
-    width:20%;
-    height: 40%;
+    font-size:10px;
+    height: 0%;
     margin: 1rem;
     box-shadow: 0 0 7px 0 #ddd;
     border-radius: 5px;
-    border: 1px solid rgb(29, 27, 27);
-    width: 300px;
+    
+    width: 200px;
     padding: 10px
 }
 .event-img{
@@ -71,10 +102,8 @@
     border: 2px solid #4CAF50; 
 }
 
-.title-display-container {
-    width: 60%;
-    margin: 4% 4% 0 4%;
-}
+
+
 
 .Menu {
     display: flex;
@@ -92,7 +121,6 @@
 
 .show-after-login {
     height: 100%;
-    background-image: linear-gradient(to bottom right, blue, white);
     position: relative;
     /* display: flex; */
     margin: 4% 4% 4% 4%;
@@ -104,7 +132,6 @@
 
 .Upcoming-Events {
     width: 25%;
-    width: 30%;
     float: right;
     margin:5px;
     padding:5px;
@@ -177,7 +204,7 @@
 }
 
 .AvaliableEvents{
-    background-color: rgb(221, 221, 228);
+    
     list-style: none;
     display: flex;
     flex-wrap: wrap;
@@ -188,3 +215,16 @@
 .Avaliable-Event-Details{
     margin-right: 40px;
 }
+
+.filters{
+    display: flex;
+    justify-content: center;
+    width:100%;
+    margin: 10px 10px 10px 10px;
+}
+.filter-button{
+    margin: 10px 10px 10px 10px;
+    padding: 10px 10px 10px 10px;
+}
+
+

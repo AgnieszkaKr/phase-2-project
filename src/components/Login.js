@@ -24,19 +24,21 @@ const Login = ({ users, handleLoginSuccess }) => {
                     onSubmit={handleLoginAttempt}
                 >
                     <input
+                        className='input-form'
                         type='text'
                         placeholder='username'
                         name='inputName'
                     />
                     <input
+                        className='input-form'
                         type='password'
                         placeholder='password'
                         name='inputPassword'
                     />
-                    <input
+                    <button
                         type='submit'
-                        value='Login'
-                    />
+                        className="Log-In"
+                    >></button>
                 </form>
             </div>
         </div>

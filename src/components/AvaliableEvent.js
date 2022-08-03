@@ -16,12 +16,14 @@ const AvaliableEvent = ({event}) => {
     const year = date.getFullYear()
     return (
         <div className="Avaliable-Event">
+            
             <img className="avaliable-event-img" src={event.image} alt="" onClick={handleClick}/>
             <p className="Avaliable-Event-Details">
             <h3>{event.name}</h3>
             <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
             </p>
         </div>
+
     )
 }
 

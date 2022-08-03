@@ -4,8 +4,9 @@ import Menu from './Menu'
 const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn }) => {
     return (
         <div className='Header'>
+            
             <div className='title-display-container'>
-                <h1>Applicaton Name</h1>
+                <p>Applicaton Name</p>
             </div>
                 {
                     !isLoggedIn
