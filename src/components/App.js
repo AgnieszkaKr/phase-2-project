@@ -9,10 +9,9 @@ const App = () => {
   const [users, setUsers] = useState([])
   const [currentUser, setCurrentUser] = useState({})
   const [isLoggedIn, setIsLoggedIn] = useState(false)
-
-  const[events, setEvents]=useState([])
-
+  const [events, setEvents] = useState([])
   const [userEvents, setUserEvents] = useState([])
+  const [userEventsIds, setUserEventsIds] = useState([])
   
   
   useEffect(() => {
@@ -49,17 +48,38 @@ const App = () => {
     associateUserEvents()
   }, [currentUser])
   
+  // useEffect(() => {
+  //   const fillUserEvents = () => {
+  //     console.log('death' , currentUser.joined_events)
+  //     setUserEventsIds(currentUser.joined_events)
+  //     console.log(userEventsIds)
+  //   }
+  //   fillUserEvents()
+  // }, [currentUser, userEvents])
 
   const handleLoginSuccess = (user) => {
     handleCurrentUser(user)
     setIsLoggedIn(true)
   }
+  
 
   const handleCurrentUser = (user) => {
     setCurrentUser(user)
+    setUserEventsIds(user.joined_events)
   }
 
-  
+    const handleJoinEvent = (newEventId) => {
+      const newUserEventsIds = [...userEventsIds, newEventId]
+      setUserEventsIds(newUserEventsIds)
+      console.log(userEventsIds)
+    }
+
+    const handleLeaveEvent = (eventToLeaveId) => {
+      const newUserEventsIds = userEventsIds.filter((target) => target != eventToLeaveId)
+      setUserEventsIds(newUserEventsIds)
+      console.log(userEventsIds)
+    }
+
   return (
     <div className="App">
       <Header 
@@ -81,6 +101,9 @@ const App = () => {
               user={currentUser} 
               joinedEvents={userEvents}
               events={events}
+              handleJoinEvent={handleJoinEvent}
+              handleLeaveEvent={handleLeaveEvent}
+              userEventsIds={userEventsIds}
             />
           </div>
       }

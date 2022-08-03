@@ -1,15 +1,13 @@
 import { useState, useEffect } from 'react'
 import AttendButton from './AttendButton.js'
 
-const UserEventCard = ({ id, name, date, participants, image, events, joinedEvents }) => {
+const UserEventCard = ({ id, name, date, participants, image, events, joinedEvents, handleJoinEvent, handleLeaveEvent, userEventIds }) => {
     const [isJoined, setIsJoined] = useState(false)
-
 
     useEffect(() => {
         const filterEvents = () => {
-            console.log(id)
-            joinedEvents.filter((event) => {
-                if (event.id == id) {
+            joinedEvents.filter((_id) => {
+                if (_id.id == id) {
                     setIsJoined(true)
                 }
             })
@@ -17,7 +15,12 @@ const UserEventCard = ({ id, name, date, participants, image, events, joinedEven
         filterEvents()
     }, [joinedEvents])
 
-    const handleToggleAttendance = () => {
+    const handleJoinLeave = () => {
+        if (isJoined) {
+            handleLeaveEvent(id)
+        } else {
+            handleJoinEvent(id);
+        }
         setIsJoined(isJoined => !isJoined)
     }
 
@@ -34,7 +37,7 @@ const UserEventCard = ({ id, name, date, participants, image, events, joinedEven
                 events={events}
                 joinedEvents={joinedEvents}
                 isJoined={isJoined}
-                handleToggleAttendance={handleToggleAttendance}
+                handleJoinLeave={handleJoinLeave}
             />
         </div>
     )
