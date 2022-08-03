@@ -4,9 +4,10 @@ import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
 
 const UserScreen = ({ user, joinedEvents, events }) => {
-    const { user_name, following_categories } = user
     const [showMoreEvents, setShowMoreEvents] = useState(false)
-
+    
+    const { user_name, following_categories } = user
+    
     const handleShowMoreEvents = () => {
         // show more events for user
         setShowMoreEvents(!showMoreEvents)

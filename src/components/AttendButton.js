@@ -5,22 +5,19 @@ import { useState, useEffect } from 'react'
 // we know whether the user is attending an event or not if their
 // attending events array includes the id of an event
 
-const AttendButton = ({ isJoined  }) => {
+const AttendButton = ({ isJoined, handleToggleAttendance  }) => {
 
     // determine initial state in parent component and update state in children
     
     return (
         <div className='Attend-Button'>
-            {isJoined
-            ? <button onClick={((e) => {
-                console.log(isJoined)
-            })}>Leave</button>
-            : <button>Join</button>
-        }
+            <button className='join-button' onClick={handleToggleAttendance}>
+                {isJoined ? 'Leave' : 'Join'}
+            </button>
         </div>
     )
 }
-
+ 
 export default AttendButton
 
     // const filterEvents = () => {
