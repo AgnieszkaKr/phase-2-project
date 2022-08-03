@@ -1,6 +1,6 @@
 import {useState} from 'react'
 import AvaliableEvent from './AvaliableEvent'
-import Calendar from 'react-calendar'
+// import Calendar from 'react-calendar'
 
 const AvaliableEvents = ({events}) => {
     // to do:

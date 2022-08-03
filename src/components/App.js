@@ -62,9 +62,6 @@ const App = () => {
   
   return (
     <div className="App">
-      {/* <button onClick={() => {
-        console.log(userEvents)
-      }}>Click</button> */}
       <Header 
         users={users} 
         currentUser={currentUser}

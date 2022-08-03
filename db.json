@@ -4,7 +4,7 @@
             "id":"1",
             "user_name":"JohnSilverfish",
             "password":"1",
-            "joined_events":[1, 2],
+            "joined_events":[1, 2, 5, 7, 11],
             "image":"https://xsgames.co/randomusers/avatar.php?g=male",
             "following_categories":""
         },

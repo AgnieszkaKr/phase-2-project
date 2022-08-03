@@ -25,6 +25,7 @@ const UserScreen = ({ user, joinedEvents, events }) => {
                     userName={user_name}
                     joinedEvents={joinedEvents}
                     followingCategories={following_categories}
+                    events={events}
                 />
                 <div className="Upcoming-Events">
                     <h3>Upcoming events</h3>

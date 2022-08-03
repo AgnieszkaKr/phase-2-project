@@ -7,6 +7,7 @@
 }
 
 .Header {
+<<<<<<< HEAD
     height: 60px;
 }
 .title-display-container {
@@ -40,6 +41,14 @@
     width: 120px
 
 
+=======
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+    /* margin: 4% 4% 0 4%; */
+>>>>>>> nick-branch
 }
 
 .Content{
@@ -109,6 +118,7 @@
     display: flex;
     align-items: center;
     justify-content: right;
+    margin: 4% 4% 0 4%
 }
 
 .Menu div {
@@ -142,7 +152,7 @@
     padding: 3% 3% 3 */
 }
 .User-Events{
-    width: 70%;
+    width: 66%;
     float: left;
 }
 
@@ -179,6 +189,7 @@
     border-radius: 50%;
 }
 
+<<<<<<< HEAD
 .No-Events-Card {
     width: 25%;
     background-color: aliceblue;
@@ -228,3 +239,29 @@
 }
 
 
+=======
+.User-Upcoming-Events {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.User-Event-Card {
+    display: block;
+    height: 40%;
+    margin: 1rem;
+    box-shadow: 0 0 7px 0 #ddd;
+    border-radius: 5px;
+    border: 1px solid rgb(29, 27, 27);
+    width: 22%;
+    padding: 10px;
+}
+
+.user-event-card-image {
+    width: 100%;
+}
+
+.Login {
+    margin: 4% 4% 0 4%
+}
+>>>>>>> nick-branch
