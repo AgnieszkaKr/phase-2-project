@@ -36,6 +36,17 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         } else {
             handleJoinEvent(event);
         }
+        fetch(`http://localhost:8000/users/${userId}`, {
+            method: 'PATCH',
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({ joined_events: userEvents })
+        })
+            .then(req => req.json())
+            .then(res => {
+                handleCurrentUser(res)
+            })
         setIsJoined(isJoined => !isJoined)
     }
     // console.log(userEvents)
@@ -52,7 +63,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
                 events={events}
                 userEvents={userEvents}
                 isJoined={isJoined}
-                handleUpdateUserEvents={handleUpdateUserEvents}
+                handleUpdateUserEvents={handleJoinLeave}
             />
         </div>
     )

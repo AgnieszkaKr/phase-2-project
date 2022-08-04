@@ -41,7 +41,7 @@ const App = () => {
       setUserEvents(currentUser.joined_events)
     }
     defineUserEvents()
-  }, [currentUser])
+  }, [isLoggedIn])
   
   
   const handleLoginSuccess = (user) => {
