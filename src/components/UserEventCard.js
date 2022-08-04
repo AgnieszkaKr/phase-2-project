@@ -4,6 +4,8 @@ import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, participants, image, events, userEvents, handleJoinEvent, handleLeaveEvent, description }) => {
     const [isJoined, setIsJoined] = useState(false)
+    const [patchObject, setPatchObject] = useState({})
+
 
     useEffect(() => {
         const filterEvents = () => {
@@ -16,19 +18,8 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         filterEvents()
     }, [userEvents])
     
-    const handleUpdateUserEvents = () => {
-        handleJoinLeave()
-        fetch(`http://localhost:8000/users/${userId}`, {
-            method: 'PATCH',
-            headers: {
-                "Content-Type": "application/json"
-            },
-            body: JSON.stringify({joined_events: userEvents})
-        })
-        .then(req => req.json())
-        .then(res => {
-            handleCurrentUser(res)
-        })   
+    const handleUpdateUserEvents = async () => {
+       
     }
 
     const handleJoinLeave = () => {
@@ -37,7 +28,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         } else {
             handleJoinEvent(event);
         }
-        setIsJoined(isJoined => !isJoined)
+        handleUpdateUserEvents()
     }
     // console.log(userEvents)
 
