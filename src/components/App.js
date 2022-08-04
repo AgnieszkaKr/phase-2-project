@@ -11,7 +11,6 @@ const App = () => {
   const [isLoggedIn, setIsLoggedIn] = useState(false)
   const [events, setEvents] = useState([])
   const [userEvents, setUserEvents] = useState([])
-  const [userEventsIds, setUserEventsIds] = useState([])
   
   
   useEffect(() => {
@@ -37,38 +36,39 @@ const App = () => {
   }, [])
 
   useEffect(() => {
-    const associateUserEvents = () => {
-      const _userEvents = events.filter((event) => {
-        return (
-          currentUser['joined_events'].includes(event.id)
-          )
-        })
-        setUserEvents(_userEvents)
-        setUserEventsIds(currentUser.joined_events)
+    const defineUserEvents = () => {
+      setUserEvents(currentUser.joined_events)
     }
-    associateUserEvents()
+    defineUserEvents()
   }, [currentUser])
   
-
+  
   const handleLoginSuccess = (user) => {
     handleCurrentUser(user)
     setIsLoggedIn(true)
   }
-
+  
   const handleCurrentUser = (user) => {
     setCurrentUser(user)
   }
-
-    const handleJoinEvent = (newEventId) => {
-      const newUserEventsIds = [...userEventsIds, newEventId]
-      setUserEventsIds(newUserEventsIds)
-    }
-
-    const handleLeaveEvent = (eventToLeaveId) => {
-      const newUserEventsIds = userEventsIds.filter((target) => target != eventToLeaveId)
-      setUserEventsIds(newUserEventsIds)
-    }
-
+  
+  const handleJoinEvent = (newEvent) => {
+    const newUserEvents = [...userEvents, newEvent]
+    setUserEvents(newUserEvents)
+  }
+  
+  const handleLeaveEvent = (eventToLeaveId) => {
+    const updatedEvents = userEvents.filter((event) => {
+      console.log('leave', event.id)
+      console.log('card id', eventToLeaveId)
+      return (
+        event.id !== eventToLeaveId
+      )
+    })
+    setUserEvents([...updatedEvents])
+    console.log(updatedEvents)
+  }
+  
   return (
     <div className="App">
       <Header 
@@ -89,11 +89,10 @@ const App = () => {
             <UserScreen
               user={currentUser} 
               handleCurrentUser={handleCurrentUser}
-              joinedEvents={userEvents}
+              userEvents={userEvents}
               events={events}
               handleJoinEvent={handleJoinEvent}
               handleLeaveEvent={handleLeaveEvent}
-              userEventsIds={userEventsIds}
             />
           </div>
       }

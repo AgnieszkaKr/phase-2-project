@@ -3,7 +3,7 @@ import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
 
-const UserScreen = ({ user, handleCurrentUser, joinedEvents, events, handleJoinEvent, handleLeaveEvent, userEventsIds }) => {
+const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEvent, handleLeaveEvent }) => {
     const [showMoreEvents, setShowMoreEvents] = useState(false)
     
     const { user_name, following_categories } = user
@@ -31,12 +31,11 @@ const UserScreen = ({ user, handleCurrentUser, joinedEvents, events, handleJoinE
                     userName={user_name}
                     userId={userId}
                     handleCurrentUser={handleCurrentUser}
-                    joinedEvents={joinedEvents}
+                    userEvents={userEvents}
                     followingCategories={following_categories}
                     events={events}
                     handleJoinEvent={handleJoinEvent}
                     handleLeaveEvent={handleLeaveEvent}
-                    userEventsIds={userEventsIds}
                 />
                 <div className="Upcoming-Events">
                     <h3>Upcoming events</h3>

@@ -8,7 +8,6 @@ const AttendButton = ({ isJoined, handleJoinLeave, handleUpdateUserEvents  }) =>
         <div className='Attend-Button'>
             <button className='join-button' 
                 onClick={() => {
-                    handleJoinLeave()
                     handleUpdateUserEvents()
                 }}>
                 {isJoined ? 'Leave' : 'Join'}
@@ -22,7 +21,7 @@ export default AttendButton
 // determine initial state in parent component and update state in children
 // const filterEvents = () => {
     //     console.log(id)
-    //     joinedEvents.filter((event) => {
+    //     userEvents.filter((event) => {
         //         console.log('id is', id, 'event.id is', event.id)
         //         return (
             //             event.id == id
