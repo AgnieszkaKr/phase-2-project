@@ -14,6 +14,9 @@ const CreateEvent = ({userName }) => {
         console.log(date)}
 
     const handleCreateNewEvent =(e)=>{
+        if (eventName === '' || date === '' || description === 'false'){
+            alert('Please, fill empty fields')
+        } else {
         e.preventDefault()
         console.log(date)
         fetch('http://localhost:8000/events',
@@ -38,7 +41,7 @@ const CreateEvent = ({userName }) => {
         setToday(new Date())
         setDescription('')
         setImage('')
-        setDisplayCreatedEvent(true)
+        setDisplayCreatedEvent(true)}
 
         }
 
@@ -49,7 +52,7 @@ const CreateEvent = ({userName }) => {
         {displayCreatedEvent ?
         <div style={{alignItems: 'center', justifyContent:'center', display:'grid'}}>
             Congratulation! Your new event:
-             <Event event={newEvent}/>
+             <Event event={newEvent} isLoggedIn={true}/>
         </div>
         :
         <div style={{alignItems: 'center', justifyContent:'center', display: 'flex'}}>
