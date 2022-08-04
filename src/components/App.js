@@ -58,16 +58,29 @@ const App = () => {
     setUserEvents(newUserEvents)
   }
   
-  const handleLeaveEvent = (eventToLeaveId) => {
-    const updatedEvents = userEvents.filter((event) => {
-      console.log('leave', event.id)
-      console.log('card id', eventToLeaveId)
-      return (
-        event.id !== eventToLeaveId
-      )
+  const handleLeaveEvent = async (eventToLeaveId) => {
+    // const updatedEvents = userEvents.filter((event) => {
+    //   // console.log('leave', event.id)
+    //   // console.log('card id', eventToLeaveId)
+    //   return (
+    //     event.id !== eventToLeaveId
+    //   )
+    // })
+    setUserEvents(async(prevState) => {
+      const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
+      let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ joined_events: filteredEvents })
+      })
+      let res = await req.json()
+      handleCurrentUser(res)
+      return filteredEvents
     })
-    setUserEvents([...updatedEvents])
-    console.log(updatedEvents)
+    // setIsJoined(isJoined => !isJoined)
+    console.log(userEvents)
   }
   
   return (

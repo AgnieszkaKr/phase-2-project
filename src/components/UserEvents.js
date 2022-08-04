@@ -6,8 +6,8 @@ const UserEvents = ({ userName, userId, handleCurrentUser, userEvents, following
     return (
         <div className='User-Events'>
             <div className='User-Upcoming-Events'>
-                {userEvents 
-                    ? userEvents.map((event) => {
+                {userEvents ?
+                    userEvents.length > 0 ? userEvents.map((event) => {
                         console.log(event)
                         const { id, name, date, participants, image } = event
                         return (
@@ -29,7 +29,7 @@ const UserEvents = ({ userName, userId, handleCurrentUser, userEvents, following
                         )
                     })
                     : <NoEventsCard />
-                }
+                : <></>}
             </div>
         </div>
     )
