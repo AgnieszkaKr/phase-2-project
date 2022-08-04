@@ -58,7 +58,7 @@ const App = () => {
     // const newUserEvents = [...userEvents, newEvent]
     // setUserEvents(newUserEvents)
     setUserEvents(async (prevState) => {
-      const updatedEvents = [prevState, newEvent]
+      const updatedEvents = [...prevState, newEvent]
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
         method: 'PATCH',
         headers: {
@@ -104,7 +104,7 @@ const App = () => {
         ?
           <div className='show-before-login'>
             <Introduction />
-            <Content events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
+            <Content userEvents={userEvents} events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
           </div>
         : 
           <div className='show-after-login'>

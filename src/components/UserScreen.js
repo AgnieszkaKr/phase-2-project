@@ -23,7 +23,7 @@ const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, ha
             </div>
             {showMoreEvents ? (
                 <>
-                <AvaliableEvents events={events} userName={user_name} isLoggedIn={isLoggedIn}/>
+                <AvaliableEvents events={events} userName={user_name} isLoggedIn={isLoggedIn} handleJoinEvent={handleJoinEvent} handleLeaveEvent={handleLeaveEvent} userEvents={userEvents} />
                 </>
 
             ) : (
@@ -43,7 +43,7 @@ const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, ha
                     <Container>
                         <Col>
                             {events.map(event =>{
-                            if (event.id <= 4) return <UpcomingEvents key={event.id} event={event}/>
+                            if (event.id <= 4) return <UpcomingEvents key={event.id} event={event} handleJoinEvent={handleJoinEvent} handleLeaveEvent={handleLeaveEvent} userEvents={userEvents} />
                             })}
                         </Col>
                     </Container>

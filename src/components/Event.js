@@ -1,17 +1,39 @@
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const Event = ({event, isLoggedIn}) => {
+const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents }) => {
+    const [isJoined, setIsJoined] = useState(false)
     console.log(isLoggedIn)
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
         setShowMore(!showMore)
     }
 
-    const signUp =()=>{
 
-        // sign up for event
+    const { id } = event
+
+    useEffect(() => {
+        const filterEvents = () => {
+            if (userEvents) {
+                if (userEvents.length > 0) {
+                    userEvents.filter((_id) => {
+                        if (_id.id == id) {
+                            setIsJoined(true)
+                        }
+                    })
+                }
+            }
+        }
+        filterEvents()
+    }, [userEvents])
+
+    const handleJoinLeave = () => {
+        if (isJoined) {
+            handleLeaveEvent(id)
+        } else {
+            handleJoinEvent(event);
+        }
     }
 
 
@@ -33,7 +55,7 @@ const Event = ({event, isLoggedIn}) => {
                 <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
                 {showMore ? 
                     <div><br/>{event.description}<br/>
-                    {isLoggedIn ? <button onClick={signUp}>sign up</button> : <></>}</div>
+                    {isLoggedIn ? <button onClick={handleJoinLeave}>{isJoined ? 'Leave' : 'Join '}</button> : <></>}</div>
                         :
                         <></>}
                         <br/>
