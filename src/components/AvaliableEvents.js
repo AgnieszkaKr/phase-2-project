@@ -19,11 +19,9 @@ const AvaliableEvents = ({events, userName}) => {
         setIndex(index+4)
         // click event won't display more events than in events array
         if (index+4 < events.length){
-            setFilter([events[0+index], events[1+index], events[2+index], events[3+index] ])
+            setFilter([...filter, events[0+index], events[1+index], events[2+index], events[3+index] ])
         }  
     }
-
-
 
     const handleSearchKey =(e)=>{
         setCalendar(false)
@@ -53,8 +51,6 @@ const AvaliableEvents = ({events, userName}) => {
     }
     
     const[date, setDate]=useState(new Date())
-
-
     // search events by date
     // filter events
     // take event.date declare date1 take month day year
@@ -76,16 +72,13 @@ const AvaliableEvents = ({events, userName}) => {
         setFilter(filterByDate)
     }
 
-    
     const showCalendar =() =>{
         setFilter(fourDisplayedEvents)
         setCalendar(!calendar)
     }
 
     const handleCreateNewEvent =() =>{
-        setCreateEvent(!createEvent)
-        console.log("create")
-        
+        setCreateEvent(!createEvent) 
     }
     
 
@@ -96,26 +89,24 @@ const AvaliableEvents = ({events, userName}) => {
         <div>
         <div>SEARCH EVENTS</div>
         <div className='Search-Box'>
-            <div className=''>
-            <div></div>
+            <div className='Search-Group'>
             <input className='Input-Keyword' type='tex=' placeholder='search by keyword' value={searchKey} onChange={handleSearchKey}/>
             </div>
-            <div className=''>
-            <div>MOCK INTERVIEW</div>
+            <div className='Search-Group'>
+            <div className='Search-Group-Name'>MOCK INTERVIEW</div>
             <img src='https://cdn.dribbble.com/users/2704931/screenshots/7048399/media/e9125c8957513a73a246798b8b21350d.png?compress=1&resize=800x600&vertical=top' alt='interview'className='Group-Event-Image' onClick={handleShowInterview}/>
            
            </div>
-            <div className=''>
-            <div>PAIR PROGRAMMING</div>
+            <div className='Search-Group'>
+            <div className='Search-Group-Name'>PAIR PROGRAMMING</div>
             <img src='https://raw.githubusercontent.com/DXHeroes/knowledge-base-content/master/files/pair-programming.svg?sanitize=true' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
             </div>
-            <div className=''>
-            <div>HACATHONS</div>
+            <div className='Search-Group'>
+            <div className='Search-Group-Name'>HACATHONS</div>
             <img src='https://t3.ftcdn.net/jpg/02/83/03/80/360_F_283038002_b0lUl4BSXEEICv0VIZX2Em6mAQe8vMkN.jpg' alt='hackathon' className='Group-Event-Image' onClick={handleShowHackathon}/>
-            
             </div>
-            
-            <div className=''>
+            <div className='Search-Group'>
+            <div className='Search-Group-Name'></div>    
             <img src='https://img.freepik.com/free-vector/calendar-icon-white-background_1308-84634.jpg?w=2000' alt='hackathon' className='Group-Event-Image' onClick={showCalendar}/>
             
             </div>  
@@ -127,8 +118,7 @@ const AvaliableEvents = ({events, userName}) => {
                 <div> <Calendar onChange={onChangeCalendar} value={date} className="calendar"/></div>
             ):(<></> )}
         </div>
-
-        <div onClick={showFourMoreEvents}>SHOW MORE EVENTS => (should show more 4 events)</div>
+            <img style={{ width:'30px', height:'30px', float:'right', margin:'0 70px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
         </div>
       )}
 

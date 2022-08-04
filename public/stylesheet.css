@@ -205,16 +205,9 @@
     padding: 0.5em;
 }
 
-.Avaliable-Event{
-    display: flex;
-    width: 60%;
-    height: 80px;
-    border-style: groove;
-    border-left:hidden;
-    border-top:hidden;
-    margin: 2%;
-    font-size: small;
-    border-radius: 10px;
+.Avaliable-Events{
+    justify-content: center;
+    margin: 0 6% 0 6%
 }
 
 .avaliable-event-img{
@@ -271,8 +264,8 @@
 
 .Group-Event-Image{
     display:inline;
-    width:100px;
-    height:100px;
+    height:110px;
+    margin-left: 40px;
 }
 
 
@@ -306,6 +299,16 @@
 
 .Search-Box{
     display: flex;
+    justify-content: center;
+    margin-bottom: 10px
+}
+
+.Search-Group{
+    align-items: center;
+    justify-content: center;
+}
+.Search-Group-Name{
+    text-align: center;
 }
 
 
