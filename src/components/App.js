@@ -96,11 +96,12 @@ const App = () => {
         ?
           <div className='show-before-login'>
             <Introduction />
-            <Content events={events} setEvents={setEvents}/>
+            <Content events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
           </div>
         : 
           <div className='show-after-login'>
             <UserScreen
+              isLoggedIn={isLoggedIn}
               user={currentUser} 
               handleCurrentUser={handleCurrentUser}
               userEvents={userEvents}

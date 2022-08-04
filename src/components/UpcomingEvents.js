@@ -37,7 +37,6 @@ const UpcomingEvents = ({event}) => {
                     <div>
                     <p>{event.name}</p>
                     <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></div> )}
-                    
                 </div>
             </Card>
         </Row>

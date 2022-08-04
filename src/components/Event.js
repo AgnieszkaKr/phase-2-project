@@ -3,6 +3,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const Event = ({event}) => {
+    
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
         setShowMore(!showMore)
@@ -23,12 +24,12 @@ const Event = ({event}) => {
                 <br/>
                 <div className='Event-Title'>{event.name}</div>
                 <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
-                
-                {showMore ? <div>{event.description}</div>:<></>}
+                {showMore ? <div><br/>{event.description}<br/><br/></div>:<></>}
                 <br/>
                 <div onClick={handleClick}>
                     {showDescription}
                 </div>
+                
                 
             </Card>
             </Col>

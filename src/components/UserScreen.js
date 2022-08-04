@@ -4,7 +4,7 @@ import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEvent, handleLeaveEvent }) => {
+const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, handleJoinEvent, handleLeaveEvent }) => {
     const [showMoreEvents, setShowMoreEvents] = useState(false)
     
     const { user_name, following_categories } = user
@@ -23,7 +23,7 @@ const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEve
             </div>
             {showMoreEvents ? (
                 <>
-                <AvaliableEvents events={events} userName={user_name}/>
+                <AvaliableEvents events={events} userName={user_name} isLoggedIn={isLoggedIn}/>
                 </>
 
             ) : (
@@ -47,7 +47,7 @@ const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEve
                             })}
                         </Col>
                     </Container>
-                    <img style={{ width:'30px', height:'30px', display:'flex' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' className="show-more-events" onClick={handleShowMoreEvents}/>
+                    <img style={{ width:'30px', height:'30px', float:'right' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' className="show-more-events" onClick={handleShowMoreEvents}/>
                 </div>
             </>
             )}

@@ -5,7 +5,7 @@ import CreateEvent from './CreateEvent'
 import 'react-calendar/dist/Calendar.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const AvaliableEvents = ({events, userName}) => {
+const AvaliableEvents = ({events, userName, isLoggedIn }) => {
 
     const[searchKey, setSearchKey]=useState('')
     // display four events
@@ -133,11 +133,11 @@ const AvaliableEvents = ({events, userName}) => {
             <Container className='events-container' fluid='md'>
                 {filter.map(event => 
                 <Row xs={3} md={3} lg={3} xl={3} className="g-3">
-                    <Event key={event.id} event={event}/> 
+                    <Event key={event.id} event={event} /> 
+                    {console.log(isLoggedIn)}
                 </Row>
                 )}
             </Container>
-            
             </>)}
     
             <img style={{ width:'30px', height:'30px', float:'right', margin:'0 100px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
@@ -180,10 +180,13 @@ const AvaliableEvents = ({events, userName}) => {
             {calendar ? (
                 <div> <Calendar onChange={onChangeCalendar} value={date} className="calendar"/></div>
             ):(<>
-            <Container className='events-container' fluid='md'>
+            <Container className='events-container' fluid='md' >
                 {filter.map(event => 
                 <Row xs={3} md={3} lg={3} xl={3} className="g-3">
-                    <Event key={event.id} event={event}/> 
+                    
+                    <Event key={event.id} event={event}/>
+                    
+                    
                 </Row>
                 )}
             </Container>
@@ -191,6 +194,7 @@ const AvaliableEvents = ({events, userName}) => {
             </>)}
     
             <img style={{ width:'30px', height:'30px', float:'right', margin:'0 70px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
+                    
         </div>
       )}
         
