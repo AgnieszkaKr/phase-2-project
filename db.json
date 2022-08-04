@@ -5,11 +5,16 @@
       "user_name": "JohnSilverfish",
       "password": "1",
       "joined_events": [
-        1,
-        2,
-        5,
-        7,
-        11
+        {
+          "id": 25,
+          "name": "Pair programming Session- Python",
+          "date": "Mon Aug 12 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+          "participants": [],
+          "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "category": [],
+          "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+          "owner": "Admin"
+        }
       ],
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "following_categories": ""
@@ -498,96 +503,6 @@
       "category": [],
       "description": "",
       "owner": "Admin"
-    },
-    {
-      "name": "hweh",
-      "date": "2022-08-17T04:00:00.000Z",
-      "participants": [],
-      "image": "twhthtr",
-      "category": [],
-      "description": "hwtrhwth",
-      "owner": "JohnSilverfish",
-      "id": 27
-    },
-    {
-      "name": "wgeqrbrg",
-      "date": "2022-08-16T04:00:00.000Z",
-      "participants": [],
-      "image": "sadgsdgasdg",
-      "category": [],
-      "description": "sdgasdg",
-      "owner": "JohnSilverfish",
-      "id": 28
-    },
-    {
-      "name": "sDgSDGASDGSG",
-      "date": "2022-08-18T04:00:00.000Z",
-      "participants": [],
-      "image": "DSGASDGASDG",
-      "category": [],
-      "description": "ADGASDA",
-      "owner": "JohnSilverfish",
-      "id": 29
-    },
-    {
-      "name": "SDGAWDGFH",
-      "date": "2022-08-25T04:00:00.000Z",
-      "participants": [],
-      "image": "FAHSDGDAG",
-      "category": [],
-      "description": "HSDFHSDFH",
-      "owner": "JohnSilverfish",
-      "id": 30
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T00:43:09.873Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 31
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T00:43:12.200Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 32
-    },
-    {
-      "name": "wfqegqrgeg",
-      "date": "2022-08-17T04:00:00.000Z",
-      "participants": [],
-      "image": "wgqrwgqrwgwg",
-      "category": [],
-      "description": "regrwgergqe",
-      "owner": "JohnSilverfish",
-      "id": 33
-    },
-    {
-      "name": "hdhgmdfhm",
-      "date": "2022-08-17T04:00:00.000Z",
-      "participants": [],
-      "image": "https://img.freepik.com/free-photo/ready-back-school_1134-12.jpg?w=996&t=st=1659577048~exp=1659577648~hmac=03fe93731d0b895e198b285f2fdd75a2f3ed31110629dd411754b8a2a2a10729",
-      "category": [],
-      "description": "hgdmhgmgm",
-      "owner": "JohnSilverfish",
-      "id": 34
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T01:44:41.604Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 35
     }
   ],
   "category": [
