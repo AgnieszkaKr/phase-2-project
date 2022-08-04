@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 const Event = ({event}) => {
     const[showMore, setShowMore]=useState(false)
@@ -16,11 +17,20 @@ const Event = ({event}) => {
     const year = date.getFullYear()
     return (
         <div className='Event'>
-            <img className="event-img" src={event.image} alt="" />
-            <h3>{event.name}</h3>
-            <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
-            {showMore ? <div>{event.description}</div>:<></>}
-            <button className="button-description" onClick={handleClick}>{showDescription}</button>
+            
+            <Card style={{ width: '18rem' }}>
+                <Card.Img variant="top" src={event.image} alt="" />
+                <Card.Body>
+                    <Card.Title>{event.name}</Card.Title>
+                    <Card.Text>
+                        {`${dayName}, ${day} ${month}, ${year} ${hour} EST`}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Body>
+                    {showMore ? <div>{event.description}</div>:<></>}
+                    <button className="button-description" onClick={handleClick}>{showDescription}</button>
+                </Card.Body>
+            </Card>
 
             
         </div>
