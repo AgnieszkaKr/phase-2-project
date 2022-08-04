@@ -4,6 +4,7 @@
 
 .App { 
     position: absolute;
+    background-repeat: no-repeat;
 }
 
 #root {
