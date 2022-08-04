@@ -55,18 +55,25 @@ const App = () => {
   }
   
   const handleJoinEvent = (newEvent) => {
-    const newUserEvents = [...userEvents, newEvent]
-    setUserEvents(newUserEvents)
-  }
+    // const newUserEvents = [...userEvents, newEvent]
+    // setUserEvents(newUserEvents)
+    setUserEvents(async (prevState) => {
+      const updatedEvents = [prevState, newEvent]
+      let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ joined_events: updatedEvents })
+      })
+      let res = await req.json()
+      handleCurrentUser(res)
+      return updatedEvents
+      })
+    }
+  
   
   const handleLeaveEvent = async (eventToLeaveId) => {
-    // const updatedEvents = userEvents.filter((event) => {
-    //   // console.log('leave', event.id)
-    //   // console.log('card id', eventToLeaveId)
-    //   return (
-    //     event.id !== eventToLeaveId
-    //   )
-    // })
     setUserEvents(async (prevState) => {
       const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
