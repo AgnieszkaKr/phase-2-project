@@ -2,12 +2,19 @@ import {useState} from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const Event = ({event}) => {
-    
+const Event = ({event, isLoggedIn}) => {
+    console.log(isLoggedIn)
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
         setShowMore(!showMore)
     }
+
+    const signUp =()=>{
+
+        // sign up for event
+    }
+
+
     let showDescription= (showMore) ? "hide details":"show details"
     const date = new Date(event.date)
     const day = date.getDate()
@@ -24,11 +31,13 @@ const Event = ({event}) => {
                 <br/>
                 <div className='Event-Title'>{event.name}</div>
                 <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
-                {showMore ? <div><br/>{event.description}<br/><br/></div>:<></>}
-                <br/>
-                <div onClick={handleClick}>
-                    {showDescription}
-                </div>
+                {showMore ? 
+                    <div><br/>{event.description}<br/>
+                    {isLoggedIn ? <button onClick={signUp}>sign up</button> : <></>}</div>
+                        :
+                        <></>}
+                        <br/>
+                        <button style={{borderRadius: '25px', border:"none"}} onClick={handleClick}>{showDescription}</button>
                 
                 
             </Card>

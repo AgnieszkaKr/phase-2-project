@@ -20,7 +20,7 @@ const Content = ({events, setEvents, isLoggedIn}) => {
             <Container className='events-container' fluid='md'>
                 {displayEvents.map(event => 
                 <Row xs={3} md={3} lg={3} xl={3} className="g-3">
-                    <Event key={event.id} event={event} isLoggedIn={isLoggedIn}/> 
+                    <Event key={event.id} event={event} isLoggedIn={false}/> 
                 </Row>
                 )}
             </Container>
