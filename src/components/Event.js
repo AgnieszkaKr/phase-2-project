@@ -18,14 +18,14 @@ const Event = ({event}) => {
     const year = date.getFullYear()
     return (
             <Col style={{marginTop:"40px"}}>
-            <Card style={{ width: '13rem', height: '14rem', marginRight:'40px', marginLeft:'20px'}} class="mr-3" >
-                <Card.Img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
-                <Card.Body>
-                    <div className='Event-Title'>{event.name}</div>
-                    <div className='Event-Date'>
-                        {`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
-                </Card.Body>
-                {showMore ? <Card.Body>{event.description}</Card.Body>:<></>}
+            <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} class="mr-3" >
+                <img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
+                <br/>
+                <div className='Event-Title'>{event.name}</div>
+                <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
+                
+                {showMore ? <div>{event.description}</div>:<></>}
+                <br/>
                 <div onClick={handleClick}>
                     {showDescription}
                 </div>

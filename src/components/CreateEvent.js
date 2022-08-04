@@ -66,7 +66,7 @@ const CreateEvent = ({userName }) => {
                     <input type='text'className='New-Event' placeholder="image url" value={image} onChange={(e)=>setImage(e.target.value)}/>
                     <br/>
                     <br/>
-                    <button type="submit" >create event</button>
+                    <button type="submit" style={{borderRadius:'10px', background:'none', borderColor:"#C6BBBB"}}>CREATE NEW EVENT</button>
                 </form>
         </div>
         }

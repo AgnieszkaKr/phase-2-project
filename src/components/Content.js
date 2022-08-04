@@ -13,19 +13,22 @@ const Content = ({events, setEvents}) => {
         .then(res => setEvents(res))
     }, [])
 
-    let displayEightEvents = events.filter((event, index) => (index < 3))
+    let displayEvents = events.filter((event, index) => (index < 4))
 
     return (
-        <Container >     
-        <Row class="justify-content-md-center" >
-                
-                    { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
-                    }
-                
-        </Row>
-        </Container>
-       
+        <div style={{marginBottom:'15px'}}>
+            <Container className='events-container' fluid='md'>
+                {displayEvents.map(event => 
+                <Row xs={3} md={3} lg={3} xl={3} className="g-3">
+                    <Event key={event.id} event={event}/> 
+                </Row>
+                )}
+            </Container>
+        </div>
         )
 }
 
 export default Content
+
+
+

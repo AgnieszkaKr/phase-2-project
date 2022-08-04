@@ -47,7 +47,7 @@ const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEve
                             })}
                         </Col>
                     </Container>
-                    <button className="show-more-events" onClick={handleShowMoreEvents}> show more events</button>
+                    <img style={{ width:'30px', height:'30px', display:'flex' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' className="show-more-events" onClick={handleShowMoreEvents}/>
                 </div>
             </>
             )}

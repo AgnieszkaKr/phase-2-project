@@ -140,7 +140,7 @@ const AvaliableEvents = ({events, userName}) => {
             
             </>)}
     
-            <img style={{ width:'30px', height:'30px', float:'right', margin:'0 70px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
+            <img style={{ width:'30px', height:'30px', float:'right', margin:'0 100px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
             
         </div>     
         ):(
