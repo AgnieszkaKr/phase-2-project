@@ -16,5 +16,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.addEventListener('scroll', () => {
+        const headerScroll = document.querySelector('.Header')
+        headerScroll.classList.toggle('sticky', window.scrollY > 0)
+      })
+    </script>
   </body>
 </html>

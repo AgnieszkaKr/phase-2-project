@@ -38,7 +38,7 @@ const Login = ({ users, handleLoginSuccess }) => {
                     <button
                         type='submit'
                         className="Log-In"
-                    >></button>
+                    > {'>'} </button>
                 </form>
             </div>
         </div>

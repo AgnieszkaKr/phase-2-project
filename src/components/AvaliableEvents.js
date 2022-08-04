@@ -107,7 +107,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
 
             <div className='Search-Group'>
             <div className='Search-Group-Name'>MOCK INTERVIEW</div>
-            <img src='https://cdn.dribbble.com/users/2704931/screenshots/7048399/media/e9125c8957513a73a246798b8b21350d.png?compress=1&resize=800x600&vertical=top' alt='interview'className='Group-Event-Image' onClick={handleShowInterview}/>
+            <img src='https://cdn.dribbble.com/users/2704931/screenshots/7048399/media/e9125c8957513a73a246798b8b21350d.png?compress=1&resize=800x600&vertical=top'  alt='interview'className='Group-Event-Image' onClick={handleShowInterview}/>
            
            </div>
             <div className='Search-Group'>

@@ -4,6 +4,7 @@ import Content from './Content'
 import Introduction from './Introduction'
 import UserScreen from './UserScreen'
 import 'bootstrap/dist/css/bootstrap.min.css';
+import backgroundSvg from '../assets/cool-background.svg'
 
 
 const App = () => {
@@ -66,7 +67,7 @@ const App = () => {
     //     event.id !== eventToLeaveId
     //   )
     // })
-    setUserEvents(async(prevState) => {
+    setUserEvents(async (prevState) => {
       const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
         method: 'PATCH',
@@ -84,7 +85,7 @@ const App = () => {
   }
   
   return (
-    <div className="App">
+    <div className="App" style={{ backgroundImage: `url(${backgroundSvg})` }}>
       <Header 
         users={users} 
         currentUser={currentUser}
