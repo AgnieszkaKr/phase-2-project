@@ -306,10 +306,21 @@
 .Search-Group{
     align-items: center;
     justify-content: center;
+    margin: 20px 0 50px 0
 }
 .Search-Group-Name{
     text-align: center;
 }
 
+.events-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.New-Event{
+    border: none;
+    border-bottom: solid;
+}
 
 

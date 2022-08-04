@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Calendar from 'react-calendar'
 import Event from './Event'
 
-const CreateEvent = ({userName}) => {
+const CreateEvent = ({userName }) => {
     const[eventName, setEventName]=useState("")
     const[description,setDescription]=useState('')
     const [image, setImage]=useState('')
@@ -44,20 +44,28 @@ const CreateEvent = ({userName}) => {
 
 
     return (
+        
         <div>
         {displayCreatedEvent ?
-        <div>
-            Congratulation! You just created new event!
+        <div style={{alignItems: 'center', justifyContent:'center', display:'grid'}}>
+            Congratulation! Your new event:
              <Event event={newEvent}/>
-            <div> show more events</div>
         </div>
         :
-        <div className='Craeate-Event'>
-                <form onSubmit={handleCreateNewEvent} >
-                    <input type='text' placeholder="event's name" value={eventName} onChange={(e)=>setEventName(e.target.value)}/>
+        <div style={{alignItems: 'center', justifyContent:'center', display: 'flex'}}>
+                <form onSubmit={handleCreateNewEvent} style={{alignItems: 'center', justifyContent:'center', display:'grid'}}>
+                    <br/>
+                    <input className='New-Event' type='text' placeholder="event's name" value={eventName} onChange={(e)=>setEventName(e.target.value)}/>
+                    <br/>
+                    <br/>
                     <Calendar onChange={onChangeCalendar} value={date} />
-                    <input type='text' placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)}/>
-                    <input type='text' placeholder="image url" value={image} onChange={(e)=>setImage(e.target.value)}/>
+                    <br/>
+                    <input type='text' className='New-Event' placeholder="description" value={description} onChange={(e) => setDescription(e.target.value)}/>
+                    <br/>
+                    <br/>
+                    <input type='text'className='New-Event' placeholder="image url" value={image} onChange={(e)=>setImage(e.target.value)}/>
+                    <br/>
+                    <br/>
                     <button type="submit" >create event</button>
                 </form>
         </div>
