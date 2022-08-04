@@ -3,6 +3,7 @@ import Header from './Header'
 import Content from './Content'
 import Introduction from './Introduction'
 import UserScreen from './UserScreen'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 
 const App = () => {

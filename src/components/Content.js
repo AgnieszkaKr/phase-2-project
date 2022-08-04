@@ -1,5 +1,9 @@
 import {useEffect, useState} from 'react'
 import Event from './Event'
+import Col from 'react-bootstrap/Col';
+import Row from 'react-bootstrap/Row';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Container from 'react-bootstrap/Container';
 
 const Content = ({events, setEvents}) => {
     
@@ -9,14 +13,18 @@ const Content = ({events, setEvents}) => {
         .then(res => setEvents(res))
     }, [])
 
-    let displayEightEvents = events.filter((event, index) => index < 8)
+    let displayEightEvents = events.filter((event, index) => (index < 6))
 
     return (
-        <div className='Content'>
-            { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
-            }
-            <p>SHOW MORE (should redirect to login interface)</p>
-        </div>
+        <Container>     
+        <Row className="justify-content-md-center" xs={4} md={2} >
+                
+                    { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
+                    }
+                
+        </Row>
+        </Container>
+       
         )
 }
 
