@@ -18,7 +18,7 @@ const Event = ({event}) => {
     const year = date.getFullYear()
     return (
         <Col>
-            <Card style={{ width: '13rem', height: '14rem'}} class="mr-3" >
+            <Card style={{ width: '13rem', height: '14rem'}} className="mr-3" >
                 <Card.Img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
                 <Card.Body>
                     <div className='Event-Title'>{event.name}</div>

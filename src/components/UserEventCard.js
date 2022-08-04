@@ -17,10 +17,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         }
         filterEvents()
     }, [userEvents])
-    
-    const handleUpdateUserEvents = async () => {
-       
-    }
+
 
     const handleJoinLeave = () => {
         if (isJoined) {
@@ -28,7 +25,6 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         } else {
             handleJoinEvent(event);
         }
-        handleUpdateUserEvents()
     }
     // console.log(userEvents)
 
@@ -61,7 +57,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
                         events={events}
                         userEvents={userEvents}
                         isJoined={isJoined}
-                        handleUpdateUserEvents={handleUpdateUserEvents}
+                        handleUpdateUserEvents={handleJoinLeave}
                     />
                 </Card.Footer>
             </Card>

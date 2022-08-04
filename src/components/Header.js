@@ -11,7 +11,7 @@ const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn }) => {
                 {
                     !isLoggedIn
                     ?    
-                    <div className='Login'>
+                    <div className='Login-Container'>
                         <Login 
                         users={users}
                         handleLoginSuccess={handleLoginSuccess} 

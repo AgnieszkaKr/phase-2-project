@@ -17,7 +17,7 @@ const Content = ({events, setEvents}) => {
 
     return (
         <Container >     
-        <Row class="justify-content-md-center" >
+        <Row className="justify-content-md-center" >
                 
                     { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
                     }
