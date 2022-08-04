@@ -13,11 +13,11 @@ const Content = ({events, setEvents}) => {
         .then(res => setEvents(res))
     }, [])
 
-    let displayEightEvents = events.filter((event, index) => (index < 6))
+    let displayEightEvents = events.filter((event, index) => (index < 3))
 
     return (
-        <Container>     
-        <Row className="justify-content-md-center" xs={4} md={2} >
+        <Container >     
+        <Row class="justify-content-md-center" >
                 
                     { displayEightEvents.map(event =><Event key={event.id} event={event}/>)
                     }

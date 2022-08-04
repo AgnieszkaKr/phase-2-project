@@ -2,6 +2,7 @@ import { useState } from 'react'
 import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
+import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEvent, handleLeaveEvent }) => {
     const [showMoreEvents, setShowMoreEvents] = useState(false)
@@ -22,7 +23,7 @@ const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEve
             </div>
             {showMoreEvents ? (
                 <>
-                    <AvaliableEvents events={events} userName={user_name}/>
+                <AvaliableEvents events={events} userName={user_name}/>
                 </>
 
             ) : (
@@ -39,10 +40,13 @@ const UserScreen = ({ user, handleCurrentUser, userEvents, events, handleJoinEve
                 />
                 <div className="Upcoming-Events">
                     <h3>Upcoming events</h3>
-                    {events.map(event =>{
-                    if (event.id <= 4) return <UpcomingEvents key={event.id} event={event}/>
-                    })}
-                
+                    <Container>
+                        <Col>
+                            {events.map(event =>{
+                            if (event.id <= 4) return <UpcomingEvents key={event.id} event={event}/>
+                            })}
+                        </Col>
+                    </Container>
                     <button className="show-more-events" onClick={handleShowMoreEvents}> show more events</button>
                 </div>
             </>

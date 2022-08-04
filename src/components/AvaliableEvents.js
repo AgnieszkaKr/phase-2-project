@@ -19,7 +19,7 @@ const AvaliableEvents = ({events, userName}) => {
         setIndex(index+4)
         // click event won't display more events than in events array
         if (index+4 < events.length){
-            setFilter([...filter, events[0+index], events[1+index], events[2+index], events[3+index] ])
+            setFilter([events[0+index], events[1+index], events[2+index], events[3+index] ])
         }  
     }
 
@@ -94,30 +94,33 @@ const AvaliableEvents = ({events, userName}) => {
 
         {createEvent ? (<CreateEvent userName={userName}/>):(
         <div>
-        <div>
-            <h3>SIGN UP FOR UPCOMING EVENTS</h3>
-            <h3 onClick={handleCreateNewEvent}>CREATE EVENT</h3>
-        
-        </div>
-        <div className='Events-Group'>
-            <div className='Event-Image-Description-1'>
+        <div>SEARCH EVENTS</div>
+        <div className='Search-Box'>
+            <div className=''>
+            <div></div>
+            <input className='Input-Keyword' type='tex=' placeholder='search by keyword' value={searchKey} onChange={handleSearchKey}/>
+            </div>
+            <div className=''>
+            <div>MOCK INTERVIEW</div>
             <img src='https://cdn.dribbble.com/users/2704931/screenshots/7048399/media/e9125c8957513a73a246798b8b21350d.png?compress=1&resize=800x600&vertical=top' alt='interview'className='Group-Event-Image' onClick={handleShowInterview}/>
-           MOCK INTERVIEW
+           
            </div>
-            <div className='Event-Image-Description-2'>
+            <div className=''>
+            <div>PAIR PROGRAMMING</div>
             <img src='https://raw.githubusercontent.com/DXHeroes/knowledge-base-content/master/files/pair-programming.svg?sanitize=true' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
-            PAIR PROGRAMMING
             </div>
-            <div className='Event-Image-Description-3'>
+            <div className=''>
+            <div>HACATHONS</div>
             <img src='https://t3.ftcdn.net/jpg/02/83/03/80/360_F_283038002_b0lUl4BSXEEICv0VIZX2Em6mAQe8vMkN.jpg' alt='hackathon' className='Group-Event-Image' onClick={handleShowHackathon}/>
-            HACATHONS
-            </div>
-        </div>
-        <div className='filters'> 
-            <input className='filter-input' type='tex=' placeholder='search by keyword' value={searchKey} onChange={handleSearchKey}/>
-            <button onClick={showCalendar}> SHOW CALENDAR </button>
             
-        </div> 
+            </div>
+            
+            <div className=''>
+            <img src='https://img.freepik.com/free-vector/calendar-icon-white-background_1308-84634.jpg?w=2000' alt='hackathon' className='Group-Event-Image' onClick={showCalendar}/>
+            
+            </div>  
+        </div>
+     
         <div className='AvaliableEvents'>
             {filter.map(event => <Event key={event.id} event={event}/> )}
             {calendar ? (
@@ -128,6 +131,8 @@ const AvaliableEvents = ({events, userName}) => {
         <div onClick={showFourMoreEvents}>SHOW MORE EVENTS => (should show more 4 events)</div>
         </div>
       )}
+
+        <div onClick={handleCreateNewEvent}>CREATE EVENT</div>
         
         </div>
     )

@@ -1,7 +1,8 @@
 import { useState, useEffect } from 'react'
 import AttendButton from './AttendButton.js'
+import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, participants, image, events, userEvents, handleJoinEvent, handleLeaveEvent, }) => {
+const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, participants, image, events, userEvents, handleJoinEvent, handleLeaveEvent, description }) => {
     const [isJoined, setIsJoined] = useState(false)
 
     useEffect(() => {
@@ -39,23 +40,44 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
         setIsJoined(isJoined => !isJoined)
     }
     // console.log(userEvents)
+
+    const eventDate = new Date(event.date)
+    const day = eventDate.getDate()
+    const dayName = eventDate.toLocaleDateString('en-US', {weekday: 'short'})
+    const month = eventDate.toLocaleString('default', { month: 'short' })
+    const hour = eventDate.toLocaleTimeString('en-US', {
+            hour: '2-digit',
+            minute: '2-digit', })
+    const year = eventDate.getFullYear()
     return (
-        <div className='User-Event-Card'>
-            <h2>{name}</h2>
-            <h3>{date}</h3>
-            <img className='user-event-card-image' src={image} />
-            <p>{participants.length} attending</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestias aut, repellat ipsum facere voluptate dicta obcaecati deserunt nobis suscipit eaque?</p>
-            <AttendButton 
-                key={id}
-                id={id} 
-                events={events}
-                userEvents={userEvents}
-                isJoined={isJoined}
-                handleUpdateUserEvents={handleUpdateUserEvents}
-            />
-        </div>
+        <Col>
+            <Card style={{ width: '18rem'}} className="ml-2" >
+                <Card.Img variant="top" src={image} alt="" />
+                <Card.Body>
+                    <Card.Title>{name}</Card.Title>
+                    <Card.Text>
+                        {`${dayName}, ${day} ${month}, ${year} ${hour} EST`}
+                    </Card.Text>
+                </Card.Body>
+                <Card.Body>
+                    {description}
+                    {/* {showMore ? <div>{description}</div>:<></>} */}
+                </Card.Body>
+                <Card.Footer>  
+                    <AttendButton 
+                        key={id}
+                        id={id} 
+                        events={events}
+                        userEvents={userEvents}
+                        isJoined={isJoined}
+                        handleUpdateUserEvents={handleUpdateUserEvents}
+                    />
+                </Card.Footer>
+            </Card>
+        </Col> 
     )
 }
 
 export default UserEventCard
+
+

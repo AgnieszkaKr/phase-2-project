@@ -1,4 +1,5 @@
 import {useState} from 'react'
+import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const UpcomingEvents = ({event}) => {
     const[displayDetails, setDisplayDitails]=useState(false)
@@ -21,22 +22,25 @@ const UpcomingEvents = ({event}) => {
     }
     
     return (
-        <div className='Upcoming-Event' onClick={handeleDisplayEvent} >
-            
-            {displayDetails ? (
-            <div>
-            <p>{event.name}</p>
-            <img className="Upcoming-Event-Image" src={event.image} alt="" />
-            <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
-            <p>{event.description}</p>
-            <button className="signUpForEvent" onClick={handleSigningUp}>Sign up </button>
-            </div>
-             ):(
-            <div>
-            <p>{event.name}</p>
-            <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></div> )}
-            
-        </div>
+        <Row>
+            <Card>
+                <div onClick={handeleDisplayEvent} >
+                    {displayDetails ? (
+                    <div>
+                    <p>{event.name}</p>
+                    <img className="Upcoming-Event-Image" src={event.image} alt="" />
+                    <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
+                    <p>{event.description}</p>
+                    <button className="signUpForEvent" onClick={handleSigningUp}>Sign up </button>
+                    </div>
+                    ):(
+                    <div>
+                    <p>{event.name}</p>
+                    <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p></div> )}
+                    
+                </div>
+            </Card>
+        </Row>
     )
 }
 

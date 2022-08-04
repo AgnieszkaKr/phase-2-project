@@ -9,7 +9,7 @@ const UserEvents = ({ userName, userId, handleCurrentUser, userEvents, following
                 {userEvents 
                     ? userEvents.map((event) => {
                         console.log(event)
-                        const { id, name, date, participants, image } = event
+                        const { id, name, date, participants, image, description } = event
                         return (
                             <UserEventCard
                                 key={id}
@@ -25,6 +25,7 @@ const UserEvents = ({ userName, userId, handleCurrentUser, userEvents, following
                                 handleJoinEvent={handleJoinEvent}
                                 handleLeaveEvent={handleLeaveEvent}
                                 userEvents={userEvents}
+                                description={description}
                             />
                         )
                     })
