@@ -37,7 +37,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
             minute: '2-digit', })
     const year = eventDate.getFullYear()
     return (
-        <Col>
+        <Col style={{ marginTop: '5%'}}>
             <Card style={{ width: '18rem'}} className="ml-2" >
                 <Card.Img variant="top" src={image} alt="" />
                 <Card.Body>

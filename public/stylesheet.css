@@ -128,17 +128,14 @@
 .Upcoming-Events {
     width: 25%;
     float: right;
-    margin:5px;
+    padding-top: 3%;
     padding:5px;
     background-color: rgb(235, 243, 241, 0.3);
-    /* height: 100%;
-    overflow: auto;
-    text-align:justify;
-    padding: 3% 3% 3 */
 }
 .User-Events{
     width: 66%;
     float: left;
+    background-color: rgb(235, 243, 241, 0.3);
 }
 
 #Logo-User-Screen{
@@ -282,10 +279,12 @@
 .Input-Keyword{
     border-radius: 40px;
     background: none;
-    text-align:center; 
-    color:black;
-    font-size: 16px;
-    line-height: 40px;
+    margin-top: 50px;
+    margin-right:5%;
+    width: 120%;
+    height: 40%;
+    
+
 }
 
 .Search-Box{
@@ -297,10 +296,13 @@
 .Search-Group{
     align-items: center;
     justify-content: center;
-    margin: 20px 0 50px 0
+    margin: 20px 40px 50px 50px
 }
 .Search-Group-Name{
     text-align: center;
+    font-family: 'Abril Fatface', cursive;
+    font-size:large;
+    letter-spacing: 1px;
 }
 
 .events-container{

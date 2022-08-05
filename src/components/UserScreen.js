@@ -40,6 +40,7 @@ const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, ha
                 />
                 <div className="Upcoming-Events">
                     <h3>Upcoming events</h3>
+                    <br/>
                     <Container>
                         <Col>
                             {events.map(event =>{

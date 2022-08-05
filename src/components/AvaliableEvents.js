@@ -128,7 +128,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
        
             <CreateEvent userName={userName}/>
             {calendar ? (
-                <div> <Calendar onChange={onChangeCalendar} value={date} className="calendar"/></div>
+               <div> <div style={{background:'none', justifyContent:'center'}}><p></p> <Calendar  onChange={onChangeCalendar} value={date} className="calendar"/></div></div>
             ):(<>
             <Container className='events-container' fluid='md'>
                 {filter.map(event => 
@@ -138,10 +138,11 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
                 </Row>
                 )}
             </Container>
+            <div>
+            <img style={{ width:'30px', height:'30px', margin:'0 0 0 25px' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
+            <div>show more</div>
+            </div> 
             </>)}
-    
-            <img style={{ width:'30px', height:'30px', float:'right', margin:'0 100px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
-            
         </div>     
         ):(
         <div>
@@ -178,7 +179,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
        
             
             {calendar ? (
-                <div> <Calendar onChange={onChangeCalendar} value={date} className="calendar"/></div>
+              <div>  <div style={{background:'none', justifyContent:'center'}}><p></p> <Calendar style={{background:'none', justifyContent:'center'}} onChange={onChangeCalendar} value={date} className="calendar"/></div></div>
             ):(<>
             <Container className='events-container' fluid='md' >
                 {filter.map(event => 
@@ -190,11 +191,12 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
                 </Row>
                 )}
             </Container>
+            <div style={{justifyContent:"center"}}>
+            <img style={{ width:'30px', height:'30px', margin:'0 0 0 25px ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
+            <div>show more</div>
+            </div>      
             
             </>)}
-    
-            <img style={{ width:'30px', height:'30px', float:'right', margin:'0 70px 0 0 ' }} src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQZ9sjY02gWy9m1rj_kMRTe5c4Aicl2WO3etg&usqp=CAU' onClick={showFourMoreEvents}/>
-                    
         </div>
       )}
         
