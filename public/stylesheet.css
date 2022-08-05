@@ -167,6 +167,8 @@
     
 }
 
+
+
 .Upcoming-Event{
     /* height: 40%; */
     border-radius: 5px;
@@ -207,9 +209,11 @@
     padding: 0.5em;
 }
 
+
 .Avaliable-Events{
     justify-content: center;
-    margin: 0 6% 0 6%
+    margin: 0 6% 0 6%;
+    margin-top: 20%
 }
 
 .avaliable-event-img{
@@ -265,7 +269,8 @@
     display:inline;
     height:110px;
     margin-left: 40px;
-    border-radius:10%
+    border-radius:10%;
+    cursor: pointer;
 }
 
 
@@ -299,10 +304,15 @@
 
 }
 
+.show-more-events {
+    cursor: pointer;
+}
+
 .Search-Box{
     display: flex;
     justify-content: center;
-    margin-bottom: 10px
+    margin-bottom: 10px;
+    margin-top: 14%;
 }
 
 .Search-Group{
@@ -344,7 +354,8 @@
 }
 
 .intro-text-container {
-    width: 40%
+    width: 40%;
+    color: aliceblue;
 }
 
 .carousel-inner {

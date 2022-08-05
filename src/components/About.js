@@ -1,6 +1,7 @@
-const About =() =>{
+const About = () => {
     return (
-        <div>
+        <div className='About'>
+            
         </div>
     )
 }
