@@ -19,9 +19,9 @@ const UserScreen = ({ isLoggedIn, user, handleCurrentUser, userEvents, events, h
 
     return (
         <div className='User-Screen'>
-    <div className='introduction-user-screen' style={{ display: 'flex', marginTop: '10%', height: '30%' }}>
+    {/* <div className='introduction-user-screen' style={{ display: 'flex', marginTop: '10%', height: '30%' }}>
         <p></p>
-        <div className='carousel-container' style={{ float: "right", }} >
+        <div className='carousel-container' style={{ float: "right", }} > */}
             {/* <Carousel fade='true'>
                 <Carousel.Item interval={5000}>
                     <img style={{ height: '450px', width: '450px' }}
@@ -44,20 +44,23 @@ const UserScreen = ({ isLoggedIn, user, handleCurrentUser, userEvents, events, h
                     />
                 </Carousel.Item>
             </Carousel> */}
-        </div>
+        {/* </div>
     </div>
-    <br/>
+    <br/> */}
 
             <Router>
                 <br/>
                 <br/>
-                <br/>
               
-                <Link to='/userEvents'>user events </Link>
-                <br/>
-                <Link to='/About'>About</Link>
-                <br/>
-                <Link to='/AvaliableEvents'>avaliable events events</Link>
+                <span>
+                    <Link to='/userEvents'><button className='route-button' >My Events</button></Link>
+                </span>
+                <span>
+                    <Link to='/About'><button className='route-button' >About</button></Link>
+                </span>
+                <span>
+                    <Link to='/AvaliableEvents'><button className='route-button' >Find an Event</button></Link>
+                </span>
                 <Switch>
 
                     <Route path='/AvaliableEvents'><AvaliableEvents events={events} userName={user_name} isLoggedIn={isLoggedIn} handleJoinEvent={handleJoinEvent} handleLeaveEvent={handleLeaveEvent} userEvents={userEvents} /></Route>
@@ -72,6 +75,16 @@ const UserScreen = ({ isLoggedIn, user, handleCurrentUser, userEvents, events, h
                                         handleLeaveEvent={handleLeaveEvent}
                                     /></Route>
                     <Route path='/About'> <About /></Route>
+                    <Route path='/' ><UserEvents
+                                        userName={user_name}
+                                        userId={userId}
+                                        handleCurrentUser={handleCurrentUser}
+                                        userEvents={userEvents}
+                                        followingCategories={following_categories}
+                                        events={events}
+                                        handleJoinEvent={handleJoinEvent}
+                                        handleLeaveEvent={handleLeaveEvent}
+                                    /></Route>
                 </Switch>
              </Router>
                     
