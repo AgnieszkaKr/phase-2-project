@@ -62,22 +62,33 @@ const App = () => {
   }
   
   const handleCurrentUser = (user) => {
-    setCurrentUser(user)
+    setCurrentUser((user))
   }
+  
+
   
   const handleJoinEvent = (newEvent) => {
-    const newUserEvents = [...userEvents, newEvent]
-    setUserEvents(newUserEvents)
-  }
+    alert('joining')
+    // const newUserEvents = [...userEvents, newEvent]
+    // setUserEvents(newUserEvents)
+    setUserEvents(async (prevState) => {
+      const updatedEvents = [...prevState, newEvent]
+      let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ joined_events: updatedEvents })
+      })
+      let res = await req.json()
+      setCurrentUser(res)
+      return updatedEvents
+      })
+    }
+  
   
   const handleLeaveEvent = async (eventToLeaveId) => {
-    // const updatedEvents = userEvents.filter((event) => {
-    //   // console.log('leave', event.id)
-    //   // console.log('card id', eventToLeaveId)
-    //   return (
-    //     event.id !== eventToLeaveId
-    //   )
-    // })
+    alert('leaving')
     setUserEvents(async (prevState) => {
       const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
@@ -92,44 +103,38 @@ const App = () => {
       return filteredEvents
     })
     // setIsJoined(isJoined => !isJoined)
-    console.log(userEvents)
   }
   
   return (
-
-        <div className="App" style={{ backgroundImage: `url(${backgroundSvg})` }}>
-          <Header 
-            users={users} 
-            currentUser={currentUser}
-            handleLoginSuccess={handleLoginSuccess} 
-            isLoggedIn={isLoggedIn}
-          />
-          {
-            !isLoggedIn
-            ?
-              <div className='show-before-login'>
-
-                    <Introduction />
-                    <Content events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
-              </div>
-            : 
-              <div className='show-after-login'>
-    git a */}
-
-                      <UserScreen
-                        isLoggedIn={isLoggedIn}
-                        user={currentUser} 
-                        handleCurrentUser={handleCurrentUser}
-                        userEvents={userEvents}
-                        events={events}
-                        handleJoinEvent={handleJoinEvent}
-                        handleLeaveEvent={handleLeaveEvent}
-                      />
-
-              </div>
-          }
-        </div>
-
+    <div className="App" style={{ backgroundImage: `url(${backgroundSvg})` }}>
+      <Header 
+        users={users} 
+        currentUser={currentUser}
+        handleLoginSuccess={handleLoginSuccess} 
+        isLoggedIn={isLoggedIn}
+        setCurrentUser={setCurrentUser}
+      />
+      {
+        !isLoggedIn
+        ?
+          <div className='show-before-login'>
+            <Introduction />
+            <Content userEvents={userEvents} events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
+          </div>
+        : 
+          <div className='show-after-login'>
+            <UserScreen
+              isLoggedIn={isLoggedIn}
+              user={currentUser} 
+              handleCurrentUser={handleCurrentUser}
+              userEvents={userEvents}
+              events={events}
+              handleJoinEvent={handleJoinEvent}
+              handleLeaveEvent={handleLeaveEvent}
+            />
+          </div>
+      }
+    </div>
   );
 }
 

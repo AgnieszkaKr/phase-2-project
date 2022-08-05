@@ -4,7 +4,41 @@
       "id": "1",
       "user_name": "JohnSilverfish",
       "password": "1",
+<<<<<<< HEAD
       "joined_events": [1, 2, 4, 5, 6, 7],
+=======
+      "joined_events": [
+        {
+          "id": 1,
+          "name": "Pair Programming Session JavaScript",
+          "date": "Mon Aug 08 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+          "participants": [],
+          "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "category": [],
+          "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories."
+        },
+        {
+          "id": 4,
+          "name": "Pair Programming Session React",
+          "date": "Mon Aug 09 2022 20:00:00 GMT-0400 (Eastern Daylight Time)",
+          "participants": [],
+          "image": "https://images.unsplash.com/photo-1514996937319-344454492b37?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80",
+          "category": [],
+          "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+          "owner": "Admin"
+        },
+        {
+          "id": 2,
+          "name": "Pair Programming Session Python",
+          "date": "Mon Aug 08 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+          "participants": [],
+          "image": "https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+          "category": [],
+          "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+          "owner": "Admin"
+        }
+      ],
+>>>>>>> 275a949edcfa535f7bc4128359e537f1599a82a9
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "following_categories": ""
     },

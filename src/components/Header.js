@@ -1,7 +1,7 @@
 import Login from './Login'
 import Menu from './Menu'
 
-const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn }) => {
+const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn, setCurrentUser }) => {
     return (
         <div className='Header'>
             

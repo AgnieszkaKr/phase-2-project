@@ -4,8 +4,6 @@ import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, participants, image, events, userEvents, handleJoinEvent, handleLeaveEvent, description }) => {
     const [isJoined, setIsJoined] = useState(false)
-    const [patchObject, setPatchObject] = useState({})
-
 
     useEffect(() => {
         const filterEvents = () => {
@@ -57,7 +55,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
                         events={events}
                         userEvents={userEvents}
                         isJoined={isJoined}
-                        handleUpdateUserEvents={handleJoinLeave}
+                        handleJoinLeave={handleJoinLeave}
                     />
                 </Card.Footer>
             </Card>

@@ -5,7 +5,7 @@ import CreateEvent from './CreateEvent'
 import 'react-calendar/dist/Calendar.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
-const AvaliableEvents = ({events, userName, isLoggedIn }) => {
+const AvaliableEvents = ({events, userName, isLoggedIn, userEvents, handleLeaveEvent, handleJoinEvent }) => {
 
     const[searchKey, setSearchKey]=useState('')
     // display four events
@@ -112,7 +112,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
            </div>
             <div className='Search-Group'>
             <div className='Search-Group-Name'>PAIR PROGRAMMING</div>
-            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2WZ80ZBEfa8Dn28qE1-I40d8DSXZLXtWgg&usqp=CAU' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
+            <img src='https://raw.githubusercontent.com/DXHeroes/knowledge-base-content/master/files/pair-programming.svg?sanitize=true' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
             </div>
             <div className='Search-Group'>
             <div className='Search-Group-Name'>HACATHONS</div>
@@ -126,15 +126,14 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
         </div>
      
        
-            <CreateEvent userName={userName}/>
+            <CreateEvent isLoggedIn={isLoggedIn} handleLeaveEvent={handleLeaveEvent} handleJoinEvent={handleJoinEvent} userName={userName}/>
             {calendar ? (
                <div> <div style={{background:'none', justifyContent:'center'}}><p></p> <Calendar  onChange={onChangeCalendar} value={date} className="calendar"/></div></div>
             ):(<>
             <Container className='events-container' fluid='md'>
                 {filter.map(event => 
                 <Row xs={3} md={3} lg={3} xl={3} className="g-3">
-                    <Event key={event.id} event={event} isLoggedIn={true}/> 
-                    {console.log(isLoggedIn)}
+                    <Event isLoggedIn={isLoggedIn} key={event.id} event={event} events={events} userEvents={userEvents} /> 
                 </Row>
                 )}
             </Container>
@@ -163,7 +162,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
            </div>
             <div className='Search-Group'>
             <div className='Search-Group-Name'>PAIR PROGRAMMING</div>
-            <img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSR2WZ80ZBEfa8Dn28qE1-I40d8DSXZLXtWgg&usqp=CAU' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
+            <img src='https://raw.githubusercontent.com/DXHeroes/knowledge-base-content/master/files/pair-programming.svg?sanitize=true' alt='pair-programming' className='Group-Event-Image' onClick={handleShowPairProgramming}/>
             </div>
             <div className='Search-Group'>
             <div className='Search-Group-Name'>HACATHONS</div>
@@ -185,7 +184,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn }) => {
                 {filter.map(event => 
                 <Row xs={3} md={3} lg={3} xl={3} className="g-3">
                     
-                    <Event key={event.id} event={event} isLoggedIn={true}/>
+                    <Event handleLeaveEvent={handleLeaveEvent} handleJoinEvent={handleJoinEvent} userEvents={userEvents} key={event.id} event={event}/>
                     
                     
                 </Row>

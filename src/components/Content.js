@@ -5,7 +5,7 @@ import Row from 'react-bootstrap/Row';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Container from 'react-bootstrap/Container';
 
-const Content = ({events, setEvents, isLoggedIn}) => {
+const Content = ({events, setEvents, isLoggedIn, userEvents, handleLeaveEvent, handleJoinEvent }) => {
     
     useEffect(()=>{
         fetch('http://localhost:8000/events')
@@ -19,8 +19,8 @@ const Content = ({events, setEvents, isLoggedIn}) => {
         <div style={{marginBottom:'15px'}}>
             <Container className='events-container' fluid='md'>
                 {displayEvents.map(event => 
-                <Row xs={3} md={3} lg={3} xl={3} className="g-3">
-                    <Event key={event.id} event={event} isLoggedIn={false}/> 
+                <Row key={event.id} xs={3} md={3} lg={3} xl={3} className="g-3">
+                    <Event userEvents={userEvents} key={event.id} event={event} isLoggedIn={isLoggedIn} handleLeaveEvent={handleLeaveEvent} handleJoinEvent={handleJoinEvent} /> 
                 </Row>
                 )}
             </Container>

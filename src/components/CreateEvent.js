@@ -2,7 +2,7 @@ import {useState} from 'react'
 import Calendar from 'react-calendar'
 import Event from './Event'
 
-const CreateEvent = ({userName }) => {
+const CreateEvent = ({ isLoggedIn, userName, userEvents, handleJoinEvent, handleLeaveEvent }) => {
     const[eventName, setEventName]=useState("")
     const[description,setDescription]=useState('')
     const [image, setImage]=useState('')
@@ -52,7 +52,7 @@ const CreateEvent = ({userName }) => {
         {displayCreatedEvent ?
         <div style={{alignItems: 'center', justifyContent:'center', display:'grid'}}>
             Congratulation! Your new event:
-             <Event event={newEvent} isLoggedIn={true}/>
+             <Event event={newEvent} isLoggedIn={isLoggedIn} userEvents={userEvents} handleLeaveEvent={handleLeaveEvent} handleJoinEvent={handleJoinEvent} />
         </div>
         :
         <div style={{alignItems: 'center', justifyContent:'center', display: 'flex'}}>
