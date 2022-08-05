@@ -4,6 +4,7 @@
       "id": "1",
       "user_name": "JohnSilverfish",
       "password": "1",
+<<<<<<< HEAD
       "joined_events": [
         {
           "id": 1,
@@ -35,6 +36,9 @@
           "owner": "Admin"
         }
       ],
+=======
+      "joined_events": [1,2,3,4,5,6,7,8,9],
+>>>>>>> main
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "following_categories": ""
     },
@@ -290,7 +294,7 @@
       "participants": [],
       "image": "https://www.studyinpoland.info/uploads/top-60-most-asked-questions-during-a-schengen-visa-interview.jpg",
       "category": [],
-      "description": "",
+      "description": "A mock interview, also known as a practice interview, is a simulation of an actual job interview. It provides job seekers with an opportunity to practice for an interview and receive feedback on their interviewing skills.",
       "owner": "Admin"
     },
     {
@@ -320,7 +324,7 @@
       "participants": [],
       "image": "https://images.unsplash.com/photo-1565728744382-61accd4aa148?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Nnx8aW50ZXJ2aWV3fGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=600&q=60",
       "category": [],
-      "description": "",
+      "description": "A mock interview, also known as a practice interview, is a simulation of an actual job interview. It provides job seekers with an opportunity to practice for an interview and receive feedback on their interviewing skills.",
       "owner": "Admin"
     },
     {
@@ -522,86 +526,6 @@
       "category": [],
       "description": "",
       "owner": "Admin"
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:02:45.137Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 27
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:04:08.060Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 28
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:30:24.978Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 29
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:41:47.997Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 30
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:50:57.053Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 31
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T19:51:17.615Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 32
-    },
-    {
-      "name": "",
-      "date": "2022-08-04T22:06:30.402Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 33
-    },
-    {
-      "name": "dsvdsv",
-      "date": "2022-08-04T22:10:29.011Z",
-      "participants": [],
-      "image": "",
-      "category": [],
-      "description": "",
-      "owner": "JohnSilverfish",
-      "id": 34
     }
   ],
   "category": [

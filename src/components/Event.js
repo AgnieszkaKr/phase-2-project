@@ -38,7 +38,7 @@ const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents
     }
 
 
-    let showDescription= (showMore) ? "hide details":"show details"
+    let showDescription= (showMore) ? "Log in to sign up":"show details"
     const date = new Date(event.date)
     const day = date.getDate()
     const dayName = date.toLocaleDateString('en-US', {weekday: 'short'})
@@ -52,15 +52,20 @@ const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents
             <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} class="mr-3" >
                 <img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
                 <br/>
-                <div className='Event-Title'>{event.name}</div>
-                <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
+                <div className='Event-Title' style={{ textAlign: 'justify', padding:'10px'}}>{event.name}</div>
+                <div className='Event-Date' style={{marginTop:'3px',twxtAlign: 'justify', padding:'10px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
                 {showMore ? 
+<<<<<<< HEAD
                     <div><br/>{event.description}<br/>
                         <AttendButton
                             isJoined={isJoined}
                             handleJoinLeave={handleJoinLeave} 
                         />
                     </div>
+=======
+                    <div style={{ textAlign: 'justify', padding:'10px'}}><br/>{event.description}<br/>
+                    {isLoggedIn ? <button onClick={signUp}>sign up</button> : <></>}</div>
+>>>>>>> main
                         :
                         <></>}
                         <br/>

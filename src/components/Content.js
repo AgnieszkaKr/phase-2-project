@@ -24,6 +24,7 @@ const Content = ({events, setEvents, isLoggedIn, userEvents, handleLeaveEvent, h
                 </Row>
                 )}
             </Container>
+            <br/>
         </div>
         )
 }
