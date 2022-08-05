@@ -55,7 +55,7 @@ const UserEventCard = ({ userId, handleCurrentUser, event, id, name, date, parti
                         events={events}
                         userEvents={userEvents}
                         isJoined={isJoined}
-                        handleUpdateUserEvents={handleJoinLeave}
+                        handleJoinLeave={handleJoinLeave}
                     />
                 </Card.Footer>
             </Card>

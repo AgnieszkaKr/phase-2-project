@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
+import AttendButton from './AttendButton';
 
 const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents }) => {
     const [isJoined, setIsJoined] = useState(false)
@@ -55,7 +56,11 @@ const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents
                 <div className='Event-Date' style={{marginTop:'3px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
                 {showMore ? 
                     <div><br/>{event.description}<br/>
-                    {isLoggedIn ? <button onClick={handleJoinLeave}>{isJoined ? 'Leave' : 'Join '}</button> : <></>}</div>
+                        <AttendButton
+                            isJoined={isJoined}
+                            handleJoinLeave={handleJoinLeave} 
+                        />
+                    </div>
                         :
                         <></>}
                         <br/>
