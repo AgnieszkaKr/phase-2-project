@@ -23,6 +23,16 @@
           "category": [],
           "description": "A mock interview, also known as a practice interview, is a simulation of an actual job interview. It provides job seekers with an opportunity to practice for an interview and receive feedback on their interviewing skills.",
           "owner": "Admin"
+        },
+        {
+          "id": 2,
+          "name": "Pair Programming Session Python",
+          "date": "Mon Aug 08 2022 19:00:00 GMT-0400 (Eastern Daylight Time)",
+          "participants": [],
+          "image": "https://miro.medium.com/max/1200/0*vwktgSPc1VQRLB_r.png",
+          "category": [],
+          "description": "Pair programming is an Agile software development technique originating from Extreme programming (XP) in which two developers team together on one computer. The two people work together to design, code and test user stories.",
+          "owner": "Admin"
         }
       ],
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",

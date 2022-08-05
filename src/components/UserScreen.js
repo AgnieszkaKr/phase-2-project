@@ -3,6 +3,8 @@ import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
 import UserLanding from './UserLanding'
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 
 const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, handleJoinEvent, handleLeaveEvent }) => {
