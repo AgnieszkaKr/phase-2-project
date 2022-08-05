@@ -4,7 +4,7 @@
       "id": "1",
       "user_name": "JohnSilverfish",
       "password": "1",
-      "joined_events": [1,2,3,4,5,6,7,8,9],
+      "joined_events": [1, 2, 4, 5, 6, 7],
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "following_categories": ""
     },
@@ -492,6 +492,16 @@
       "category": [],
       "description": "",
       "owner": "Admin"
+    },
+    {
+      "name": "sfhfdhdfh",
+      "date": "2022-08-17T04:00:00.000Z",
+      "participants": [],
+      "image": "",
+      "category": [],
+      "description": "",
+      "owner": "JohnSilverfish",
+      "id": 27
     }
   ],
   "category": [

@@ -1,5 +1,7 @@
+
 const Menu = ({ currentUser }) => {
     const { id, user_name, password, joined_events, image, following_categories } = currentUser
+
     return (
         <div className='Menu'>
             <img className="userImage" src={image} alt="" />
@@ -9,7 +11,7 @@ const Menu = ({ currentUser }) => {
             <div id='profile-button'>
                 <img src='https://www.freeiconspng.com/uploads/menu-icon-24.png' width='15px' height='auto' /> 
             </div>
-            
+
         </div>
     )
 }

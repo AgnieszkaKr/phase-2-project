@@ -5,6 +5,17 @@ import Introduction from './Introduction'
 import UserScreen from './UserScreen'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import backgroundSvg from '../assets/cool-background.svg'
+import AvaliableEvents from './AvaliableEvents'
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link,
+  NavLink,
+  useRouteMatch,
+  useParams
+} from "react-router-dom";
+import { Routes } from 'react-router-dom';
 
 
 const App = () => {
@@ -85,36 +96,58 @@ const App = () => {
   }
   
   return (
-    <div className="App" style={{ backgroundImage: `url(${backgroundSvg})` }}>
-      <Header 
-        users={users} 
-        currentUser={currentUser}
-        handleLoginSuccess={handleLoginSuccess} 
-        isLoggedIn={isLoggedIn}
-      />
-      {
-        !isLoggedIn
-        ?
-          <div className='show-before-login'>
-            <Introduction />
-            <Content events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
-          </div>
-        : 
-          <div className='show-after-login'>
-            <UserScreen
-              isLoggedIn={isLoggedIn}
-              user={currentUser} 
-              handleCurrentUser={handleCurrentUser}
-              userEvents={userEvents}
-              events={events}
-              handleJoinEvent={handleJoinEvent}
-              handleLeaveEvent={handleLeaveEvent}
-            />
-          </div>
-      }
-    </div>
+
+        <div className="App" style={{ backgroundImage: `url(${backgroundSvg})` }}>
+          <Header 
+            users={users} 
+            currentUser={currentUser}
+            handleLoginSuccess={handleLoginSuccess} 
+            isLoggedIn={isLoggedIn}
+          />
+          {
+            !isLoggedIn
+            ?
+              <div className='show-before-login'>
+
+                    <Introduction />
+                    <Content events={events} setEvents={setEvents} isLoggedIn={isLoggedIn}/>
+              </div>
+            : 
+              <div className='show-after-login'>
+                      <Router>
+                          <Link to='/'>Home page</Link>
+                          <Link to='/userEvents'>user events</Link>
+                          <Link to='/AvaliableEvents'>user events</Link>
+                          <Switch>
+                            <Route path='/' elemnet={<App/>}/>
+                            <Route path='/userEvents' elemnet={<UserScreen/>}/>
+                            <Route path='/AvaliableEvents' elemnet={<AvaliableEvents/>}/>
+                          </Switch>
+                      </Router>
+
+                      <UserScreen
+                        isLoggedIn={isLoggedIn}
+                        user={currentUser} 
+                        handleCurrentUser={handleCurrentUser}
+                        userEvents={userEvents}
+                        events={events}
+                        handleJoinEvent={handleJoinEvent}
+                        handleLeaveEvent={handleLeaveEvent}
+                      />
+
+              </div>
+          }
+        </div>
+
   );
 }
 
 export default App;
+
+
+
+
+
+
+
 
