@@ -4,7 +4,6 @@
       "id": "1",
       "user_name": "JohnSilverfish",
       "password": "1",
-<<<<<<< HEAD
       "joined_events": [
         {
           "id": 1,
@@ -36,9 +35,6 @@
           "owner": "Admin"
         }
       ],
-=======
-      "joined_events": [1,2,3,4,5,6,7,8,9],
->>>>>>> main
       "image": "https://xsgames.co/randomusers/avatar.php?g=male",
       "following_categories": ""
     },

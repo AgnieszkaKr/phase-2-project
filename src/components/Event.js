@@ -55,17 +55,12 @@ const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents
                 <div className='Event-Title' style={{ textAlign: 'justify', padding:'10px'}}>{event.name}</div>
                 <div className='Event-Date' style={{marginTop:'3px',twxtAlign: 'justify', padding:'10px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
                 {showMore ? 
-<<<<<<< HEAD
                     <div><br/>{event.description}<br/>
                         <AttendButton
                             isJoined={isJoined}
                             handleJoinLeave={handleJoinLeave} 
                         />
                     </div>
-=======
-                    <div style={{ textAlign: 'justify', padding:'10px'}}><br/>{event.description}<br/>
-                    {isLoggedIn ? <button onClick={signUp}>sign up</button> : <></>}</div>
->>>>>>> main
                         :
                         <></>}
                         <br/>
