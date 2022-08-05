@@ -57,7 +57,9 @@ const UpcomingEvents = ({ event, handleJoinEvent, handleLeaveEvent, userEvents }
                     <img className="Upcoming-Event-Image" src={event.image} alt="" />
                     <p>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`}</p>
                     <p>{event.description}</p>
-                    <button className="signUpForEvent" onClick={handleJoinLeave}>Sign up </button>
+                    <button className="signUpForEvent" onClick={handleJoinLeave}>
+                    {isJoined ? 'Leave Event' : 'Join Event'}
+                    </button>
                     </div>
                     ):(
                     <div>

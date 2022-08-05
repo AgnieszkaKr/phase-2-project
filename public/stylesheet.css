@@ -4,6 +4,9 @@
 
 .App { 
     position: absolute;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
 }
 
 #root {
@@ -97,9 +100,8 @@
 }
 
 .show-before-login {
-    margin-top: 12%;
+    margin-top: 7%;
 }
-
 
 .Menu {
     display: flex;
@@ -321,13 +323,6 @@
     width: 600px;
     height: 600px;
     border-radius: 45%;
-}
-
-.right.carousel-control,
-.left.carousel-control {
-    opacity: 0;
-    filter: alpha(opacity=0);
-    /* IE support */
 }
 
 .carousel-item {

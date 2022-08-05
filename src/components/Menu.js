@@ -9,7 +9,6 @@ const Menu = ({ currentUser }) => {
             <div id='profile-button'>
                 <img src='https://www.freeiconspng.com/uploads/menu-icon-24.png' width='15px' height='auto' /> 
             </div>
-            
         </div>
     )
 }
