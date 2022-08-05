@@ -49,7 +49,7 @@ const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents
     const year = date.getFullYear()
     return (
             <Col style={{marginTop:"40px"}}>
-            <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} class="mr-3" >
+            <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} className="mr-3" >
                 <img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
                 <br/>
                 <div className='Event-Title' style={{ textAlign: 'justify', padding:'10px'}}>{event.name}</div>

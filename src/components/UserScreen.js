@@ -2,6 +2,9 @@ import { useState } from 'react'
 import UserEvents from './UserEvents'
 import UpcomingEvents from './UpcomingEvents'
 import AvaliableEvents from './AvaliableEvents'
+import UserLanding from './UserLanding'
+import ReactDOM from 'react-dom';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
 import Carousel from 'react-bootstrap/Carousel'
 
@@ -18,6 +21,7 @@ const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, ha
 
     return (
         <div className='User-Screen'>
+<<<<<<< HEAD
             <div className='introduction-user-screen' style={{display:'flex',marginTop:'10%', height:'30%'}}>
             <p></p>
                 <div className='carousel-container' style={{float:"right",}} >
@@ -51,6 +55,9 @@ const UserScreen = ({isLoggedIn, user, handleCurrentUser, userEvents, events, ha
 
 
 
+=======
+            <UserLanding />
+>>>>>>> join-branch
             {showMoreEvents ? (
                 <>
                 <AvaliableEvents events={events} userName={user_name} isLoggedIn={isLoggedIn} handleJoinEvent={handleJoinEvent} handleLeaveEvent={handleLeaveEvent} userEvents={userEvents} />
