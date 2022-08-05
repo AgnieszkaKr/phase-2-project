@@ -31,10 +31,13 @@ const Introduction = () => {
         </Carousel>
         </div>
         <div className='intro-text-container'>
-          <h2>WE CONNECT DEVELOPERS</h2>
-          <p>
-            Coding, sometimes called computer programming, is how we communicate with computers. Code tells a computer what actions to take, and writing code is like creating a set of instructions. By learning to write code, you can tell computers what to do or how to behave in a much faster way. You can use this skill to make websites and apps, process data, and do lots of other cool things.
-            </p>
+        <h2 style={{ fontSize: '50px' }}>Get Connected.</h2>
+        <br></br>
+          <p style={{fontSize: '10px'}}>DISCLAIMER: ALL OF THIS IS FALSE</p>
+          <p style={{fontSize: '40px'}}>
+            Be a part of the *fastest-growing **online ***community of ****software developers and find someone to code along with in *****seconds.
+          </p>
+          <p style={{fontSize: '30px'}}>Can't find an event for your stack, skill level, or schedule? Create your own!</p>
       </div>
     </div>
   );

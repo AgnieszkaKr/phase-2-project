@@ -95,7 +95,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn, userEvents, handleLeaveE
 
         {createEvent ? (
         <div>
-        <div style={{justifyContent:'center',display: 'flex'}}>SEARCH EVENTS</div>
+        <div style={{justifyContent:'center',display: 'flex'}}>Click on a Category!</div>
         <div className='Search-Box'>
             <div className='Search-Group' style={{alignItems:'center'}}>
             <input className='Input-Keyword' type='tex=' placeholder='search by keyword' value={searchKey} onChange={handleSearchKey}/>
@@ -145,7 +145,7 @@ const AvaliableEvents = ({events, userName, isLoggedIn, userEvents, handleLeaveE
         </div>     
         ):(
         <div>
-        <div style={{justifyContent:'center',display: 'flex'}}>SEARCH EVENTS</div>
+        <div style={{justifyContent:'center',display: 'flex'}}></div>
         <div className='Search-Box'>
             <div className='Search-Group' style={{alignItems:'center'}}>
             <input className='Input-Keyword' type='tex=' placeholder='search by keyword' value={searchKey} onChange={handleSearchKey}/>
