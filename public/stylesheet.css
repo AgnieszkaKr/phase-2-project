@@ -133,7 +133,9 @@
     margin: 9% 4% 4% 4%;
 }
 
-
+.User-Screen {
+    width: 100%
+}
 
 .Upcoming-Events {
     width: 25%;

@@ -1,8 +1,3 @@
-<<<<<<< HEAD
-
-const Menu = ({ currentUser }) => {
-    const { id, user_name, password, joined_events, image, following_categories } = currentUser
-=======
 import { useState } from 'react'
 
 const Menu = ({ currentUser }) => {
@@ -12,7 +7,6 @@ const Menu = ({ currentUser }) => {
     const handleClick = () => {
         setClick(click => !click)
     }
->>>>>>> join-branch
 
     return (
         <div className='Menu'>
@@ -32,10 +26,6 @@ const Menu = ({ currentUser }) => {
                     <li>Logout</li>
                 </ul>
             </div>
-<<<<<<< HEAD
-
-=======
->>>>>>> join-branch
         </div>
     )
 }
