@@ -7,9 +7,6 @@ const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn, setCurrent
             
             <div className='title-display-container'>
                 <p>Applicaton Name</p>
-                <button onClick={(e) => {
-                    console.log(currentUser)
-                }}>Save me</button>
             </div>
                 {
                     !isLoggedIn

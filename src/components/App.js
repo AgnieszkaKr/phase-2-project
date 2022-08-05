@@ -23,8 +23,8 @@ const App = () => {
     }
     getEvents()
   }, [])
-
-
+  
+  
   useEffect(() => {
     const getUsers = () => {
       fetch('http://localhost:8000/users')
@@ -36,13 +36,6 @@ const App = () => {
     }
     getUsers()
   }, [])
-
-  useEffect(() => {
-    const defineUserEvents = () => {
-      setUserEvents(currentUser.joined_events)
-    }
-    defineUserEvents()
-  }, [isLoggedIn])
   
   
   const handleLoginSuccess = (user) => {
@@ -51,13 +44,14 @@ const App = () => {
   }
   
   const handleCurrentUser = (user) => {
-    setCurrentUser((user))
+    setCurrentUser(user)
+    setUserEvents(user.joined_events)
   }
   
-
+  
   
   const handleJoinEvent = (newEvent) => {
-    alert('joining')
+    // alert('joining')
     // const newUserEvents = [...userEvents, newEvent]
     // setUserEvents(newUserEvents)
     setUserEvents(async (prevState) => {
@@ -70,14 +64,14 @@ const App = () => {
         body: JSON.stringify({ joined_events: updatedEvents })
       })
       let res = await req.json()
-      setCurrentUser(res)
+      handleCurrentUser(res)
       return updatedEvents
       })
     }
   
   
   const handleLeaveEvent = async (eventToLeaveId) => {
-    alert('leaving')
+    // alert('leaving')
     setUserEvents(async (prevState) => {
       const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {

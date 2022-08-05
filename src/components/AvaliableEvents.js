@@ -28,9 +28,9 @@ const AvaliableEvents = ({events, userName, isLoggedIn, userEvents, handleLeaveE
         setCreateEvent(false)
         setCalendar(false)
         setSearchKey(e.target.value)
-        console.log(e.target.value)
+        console.log('searching', e.target.value)
         let filterEvents = events.filter(event => {return (event.name).toLowerCase().includes(searchKey.toLowerCase())})
-        console.log()
+        // console.log()
         setFilter(filterEvents)
     }
 
