@@ -144,11 +144,11 @@
 }
 #Description-UserScreen{
     
-    text-align: center;
+    text-align: right;
     height:30%
 }
 .introduction-user-screen{
-    display:flex;
+   
     justify-content: centerEvent;
     border-bottom: solid grey;
     align-items: center;

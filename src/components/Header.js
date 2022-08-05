@@ -6,7 +6,7 @@ const Header = ({ users, currentUser, handleLoginSuccess, isLoggedIn }) => {
         <div className='Header'>
             
             <div className='title-display-container'>
-                <p>Applicaton Name</p>
+                <p style={{fontFamily: 'Abril Fatface', fontSize: '90px', letterSpacing: '0.05em'}}>MeetCODE</p>
             </div>
                 {
                     !isLoggedIn

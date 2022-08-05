@@ -31,11 +31,9 @@ const Introduction = () => {
         </Carousel>
         </div>
         <div className='intro-text-container'>
-          <h3>This is text.</h3>
+          <h2>WE CONNECT DEVELOPERS</h2>
           <p>
-            Though we assume the latter, few can name a fabled mayonnaise that isn't a strawlike attraction. The grapes could be said to resemble waggly orders. Recent controversy aside, the creamy sushi comes from an absorbed denim. A shear is a dew's vault.
-
-Those triangles are nothing more than belts. Though we assume the latter, some posit the garish firewall to be less than messy. If this was somewhat unclear, a perch is an inlaid teller. We can assume that any instance of a calf can be construed as a leaden green.
+            Coding, sometimes called computer programming, is how we communicate with computers. Code tells a computer what actions to take, and writing code is like creating a set of instructions. By learning to write code, you can tell computers what to do or how to behave in a much faster way. You can use this skill to make websites and apps, process data, and do lots of other cool things.
             </p>
       </div>
     </div>

@@ -114,16 +114,7 @@ const App = () => {
               </div>
             : 
               <div className='show-after-login'>
-                      <Router>
-                          <Link to='/'>Home page</Link>
-                          <Link to='/userEvents'>user events</Link>
-                          <Link to='/AvaliableEvents'>user events</Link>
-                          <Switch>
-                            <Route path='/' elemnet={<App/>}/>
-                            <Route path='/userEvents' elemnet={<UserScreen/>}/>
-                            <Route path='/AvaliableEvents' elemnet={<AvaliableEvents/>}/>
-                          </Switch>
-                      </Router>
+    git a */}
 
                       <UserScreen
                         isLoggedIn={isLoggedIn}
