@@ -34,8 +34,8 @@ const App = () => {
     }
     getEvents()
   }, [])
-
-
+  
+  
   useEffect(() => {
     const getUsers = () => {
       fetch('http://localhost:8000/users')
@@ -47,13 +47,6 @@ const App = () => {
     }
     getUsers()
   }, [])
-
-  useEffect(() => {
-    const defineUserEvents = () => {
-      setUserEvents(currentUser.joined_events)
-    }
-    defineUserEvents()
-  }, [isLoggedIn])
   
   
   const handleLoginSuccess = (user) => {
@@ -63,21 +56,33 @@ const App = () => {
   
   const handleCurrentUser = (user) => {
     setCurrentUser(user)
+    setUserEvents(user.joined_events)
   }
+  
+  
   
   const handleJoinEvent = (newEvent) => {
-    const newUserEvents = [...userEvents, newEvent]
-    setUserEvents(newUserEvents)
-  }
+    // alert('joining')
+    // const newUserEvents = [...userEvents, newEvent]
+    // setUserEvents(newUserEvents)
+    setUserEvents(async (prevState) => {
+      const updatedEvents = [...prevState, newEvent]
+      let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
+        method: 'PATCH',
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ joined_events: updatedEvents })
+      })
+      let res = await req.json()
+      handleCurrentUser(res)
+      return updatedEvents
+      })
+    }
+  
   
   const handleLeaveEvent = async (eventToLeaveId) => {
-    // const updatedEvents = userEvents.filter((event) => {
-    //   // console.log('leave', event.id)
-    //   // console.log('card id', eventToLeaveId)
-    //   return (
-    //     event.id !== eventToLeaveId
-    //   )
-    // })
+    // alert('leaving')
     setUserEvents(async (prevState) => {
       const filteredEvents = prevState.filter(evt => evt.id !== eventToLeaveId)
       let req = await fetch(`http://localhost:8000/users/${currentUser.id}`, {
@@ -92,8 +97,13 @@ const App = () => {
       return filteredEvents
     })
     // setIsJoined(isJoined => !isJoined)
-    console.log(userEvents)
   }
+
+    const [click, setClick] = useState(false)
+    
+    const handleClick = () => {
+        setClick(click => !click)
+    }
   
   return (
 
@@ -114,18 +124,6 @@ const App = () => {
               </div>
             : 
               <div className='show-after-login'>
-                      <Router>
-                          <Link to='/'>Home page</Link>
-                          <Link to='/userEvents'>user events</Link>
-                          <Link to='/AvaliableEvents'>user events</Link>
-                          <Switch>
-                            <Route exact path='/' element={<App/>}/>
-                            <Route path='/userEvents' elemnet={<UserScreen/>}/>
-                            <Route path='/AvaliableEvents' elemnet={<AvaliableEvents/>}/>
-                          </Switch>
-                      </Router>
-
-
                       <UserScreen
                         isLoggedIn={isLoggedIn}
                         user={currentUser} 

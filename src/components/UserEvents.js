@@ -8,7 +8,7 @@ const UserEvents = ({ userName, userId, handleCurrentUser, userEvents, following
             <div className='User-Upcoming-Events'>
                 {userEvents ?
                     userEvents.length > 0 ? userEvents.map((event) => {
-                        console.log(event)
+                        // console.log(event)
                         const { id, name, date, participants, image, description } = event
                         return (
                             <UserEventCard

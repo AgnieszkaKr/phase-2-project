@@ -1,14 +1,13 @@
-import { useState, useEffect } from 'react'
 
 
-const AttendButton = ({ isJoined, handleJoinLeave, handleUpdateUserEvents  }) => {
+const AttendButton = ({ isJoined, handleJoinLeave }) => {
     
     
     return (
         <div className='Attend-Button'>
             <button className='join-button' 
                 onClick={() => {
-                    handleUpdateUserEvents()
+                    handleJoinLeave()
                 }}>
                 {isJoined ? 'Leave' : 'Join'}
             </button>

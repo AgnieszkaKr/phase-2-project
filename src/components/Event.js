@@ -1,17 +1,40 @@
-import {useState} from 'react'
+import { useState, useEffect } from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Container ,Card, Row, Col, Button} from 'react-bootstrap';
+import AttendButton from './AttendButton';
 
-const Event = ({event, isLoggedIn}) => {
+const Event = ({event, isLoggedIn, handleJoinEvent, handleLeaveEvent, userEvents }) => {
+    const [isJoined, setIsJoined] = useState(false)
     console.log(isLoggedIn)
     const[showMore, setShowMore]=useState(false)
     const handleClick =()=>{
         setShowMore(!showMore)
     }
 
-    const signUp =()=>{
 
-        // sign up for event
+    const { id } = event
+
+    useEffect(() => {
+        const filterEvents = () => {
+            if (userEvents) {
+                if (userEvents.length > 0) {
+                    userEvents.filter((_id) => {
+                        if (_id.id == id) {
+                            setIsJoined(true)
+                        }
+                    })
+                }
+            }
+        }
+        filterEvents()
+    }, [userEvents])
+
+    const handleJoinLeave = () => {
+        if (isJoined) {
+            handleLeaveEvent(id)
+        } else {
+            handleJoinEvent(event);
+        }
     }
 
 
@@ -26,14 +49,18 @@ const Event = ({event, isLoggedIn}) => {
     const year = date.getFullYear()
     return (
             <Col style={{marginTop:"40px"}}>
-            <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} class="mr-3" >
+            <Card style={{ width: '13rem', height: 'auto', marginRight:'40px', marginLeft:'20px'}} className="mr-3" >
                 <img variant="top" src={event.image} alt="" style={{ width: '13rem', height: '7rem'}} />
                 <br/>
                 <div className='Event-Title' style={{ textAlign: 'justify', padding:'10px'}}>{event.name}</div>
                 <div className='Event-Date' style={{marginTop:'3px',twxtAlign: 'justify', padding:'10px'}}>{`${dayName}, ${day} ${month}, ${year} ${hour} EST`} </div>
                 {showMore ? 
-                    <div style={{ textAlign: 'justify', padding:'10px'}}><br/>{event.description}<br/>
-                    {isLoggedIn ? <button onClick={signUp}>sign up</button> : <></>}</div>
+                    <div><br/>{event.description}<br/>
+                        <AttendButton
+                            isJoined={isJoined}
+                            handleJoinLeave={handleJoinLeave} 
+                        />
+                    </div>
                         :
                         <></>}
                         <br/>
